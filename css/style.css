@@ -252,3 +252,15 @@ body.mobile-menu-active #mobileMenuBtn > span:last-child {
         height: auto;
     }
 }
+
+@media(min-width:1400px) {
+    header .header__bg .header---left .header__logo {
+        width: 30vw;
+    }
+}
+
+@media(min-width:2000px) {
+    header .header__bg .header---left .header__logo {
+        width: 35vw;
+    }
+}
