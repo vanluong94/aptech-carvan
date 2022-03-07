@@ -1,66 +1,16 @@
+body {
+    background-color: whitesmoke;
+}
+
+/* STYLE FROM HEADER */
 :root {
     --main-color: #fbe122;
     --text-color-dark: #121212;
     --text-color-light: #fff;
-    --text-hover-color: #ed6663;
 }
 
 body {
     color: var(--text-color-dark);
-}
-
-h1, h2, h3, h4, h5, h6, 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: Saira Condensed, open-sans;
-}
-
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.9em;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: var(--text-color-dark);
-}
-
-a:hover {
-    color: var(--text-color-dark);
-}
-
-body.page {
-    background: #f5f5f5;
-}
-
-body.page .page__section {
-    background-color: var(--bs-white);
-    padding: 30px;
-}
-
-.btn {
-    border-radius: 0;
-    font-family: Saira Condensed, open-sans;
-    letter-spacing: .5px;
-    font-weight: 500;
-}
-
-.btn-primary {
-    color: var(--text-color-dark);
-    border-color: var(--main-color);
-    background-color: var(--main-color);
-    transition: all .2s ease-in-out;
-}
-
-.btn-primary:hover {
-    color: var(--main-color);
-    border-color: var(--bs-dark);
-    background-color: var(--bs-dark);
 }
 
 header {
@@ -308,14 +258,169 @@ body.mobile-menu-active #mobileMenuBtn > span:last-child {
     }
 }
 
-@media(min-width:1400px) {
-    header .header__bg .header---left .header__logo {
-        width: 30vw;
-    }
+
+
+
+
+
+
+
+
+
+/* STYLE FROM CONTACT US - COMPANY */
+/* CONTACT US */
+.Contact_Us{
+    font-family: Saira Condensed, open-sans;
 }
 
-@media(min-width:2000px) {
-    header .header__bg .header---left .header__logo {
-        width: 35vw;
-    }
+/* BRAND */
+.conTactUsImg{
+    background-image: url(../images/backgrounds/category-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
 }
+
+/* GOOGLE MAP */
+.googleMap{
+    background-color: white;
+}
+
+/* CONTACT US */
+.contactUsCompany{
+    font-size: larger;
+}
+
+.contactUsBG{
+    background-color: white;
+    height: 550px;
+}
+
+.lineCU{
+    margin: 0px 5px;
+    padding: 1px;
+}
+
+.contactInput{
+    padding: 0px 14px;
+}
+
+.subjectCU{
+    padding: 0px 10px;
+}
+
+.buttonCU{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #efecec;
+    border-color: #efecec;
+}
+.buttonCU:hover .textButtonCU{
+    color: #fff;
+}
+
+.textButtonCU{
+    font-size: 0.9rem;
+}
+
+/* COMPANY */
+.companyStyle{
+    margin: 0px 0px 0px 8px;
+}
+
+.companyMenu{
+    background-color: white;
+    height: 400px;
+}
+
+.companyList{
+    list-style-type: none;
+    font-size: large;
+}
+
+.companyList a{
+    color: #898989;
+    line-height: 35px;
+    text-decoration: none;
+} 
+
+.companyList a:hover{
+    color: #121212;
+}
+
+/* ACHIEVEMENTS */
+.AchFull{
+    background-color: white;
+    padding: 30px 0px;
+}
+
+.AchIcon{
+    align-items: center;
+    margin-right: 10px;
+}
+
+.AchText{
+    align-items: center;
+}
+
+.AchFont{
+    padding-left: 60px;
+    font-size: 1.1rem;
+}
+
+.Icons{
+    margin-left: 25px;
+}
+
+/* STYLE FOR FOOTER */
+/* NEWSLETTER */
+.footer_Full{
+    font-family: Saira Condensed, open-sans;
+}
+.footerBG{
+    background-image: url(../images/backgrounds/newsletter-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 35px 0px 80px 0px;
+}
+
+.btnNewsletter:hover{
+    color: white;
+    background-color: black !important;
+}
+
+/* IMFORMATION */
+.imfDot ul{
+    list-style: none;
+    margin: 0px;
+}
+
+.imfLink{
+    text-decoration: none;
+    color: rgb(198, 196, 196);
+}
+
+.imfLink:hover{
+    color: #fbe122;
+}
+
+/* ARROW BACK TO HEADER */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    opacity: 0.7;
+    }
+    
+    #myBtn:hover {
+    background-color: red;
+    }
