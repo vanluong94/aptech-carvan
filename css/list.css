@@ -573,7 +573,16 @@ form{
     .footerp4 p{
         margin-top: 15px;
     }
+
+    .main_left_up h3{
+        font-size: 23px;
+    }
+    
+    .main_left_up p{
+        font-size: 18px;
+    }
 }
+
 
 @media screen and (max-width: 575px){
     .header_left::after{
@@ -638,6 +647,13 @@ form{
         height: 60px;
     }
 
+    .main_left_up h3{
+        font-size: 23px;
+    }
+    
+    .main_left_up p{
+        font-size: 18px;
+    }
 }
 
 
