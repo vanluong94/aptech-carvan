@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carvan - Car Market</title>
+
+        <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+        <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&subset=latin,latin-ext"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800&subset=latin,latin-ext"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500,600,700,800&subset=latin,latin-ext"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:400%7CSaira+Condensed:400%2C600%2C300%7COpen+Sans:400"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+
+        <script src="./lib/jquery.min.js"></script>
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+        <script src="./lib/slick.min.js"></script>
+
+        <link rel="stylesheet" href="./css/style.css.css" />
+    </head>
+    <body>
+        <!-- HEADER BEGIN -->
+        <header>
+            <div class="container">
+                <div class="header__content">
+                    <div class="header--left d-flex align-items-center">
+                        <div class="header__logo">
+                            <h1 class="header__logo-text font-weight-bolder">
+                                CARVAN
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="header--right flex-grow-1 d-flex flex-column">
+                        <div
+                            class="header__top-bar row align-items-center justify-content-between"
+                        >
+                            <div
+                                class="header__marquee col-6 d-flex align-items-center"
+                            >
+                                <marquee direction="left">
+                                    <span
+                                        >Hot days! - <span>50%</span> Get ready
+                                        for summer!</span
+                                    >
+                                    <span
+                                        >Save up to <span>40%</span> Hurry
+                                        limited offer!</span
+                                    >
+                                </marquee>
+                            </div>
+                            <div
+                                class="header__meta col-6 d-flex justify-content-end"
+                            >
+                                <div class="header__meta-item ml-3">
+                                    <i class="fa-regular fa-clock mr-1"></i> Mon
+                                    - Fri : 09am to 06pm
+                                </div>
+                                <div class="header__meta-item ml-3">
+                                    <i class="fa-solid fa-phone mr-1"></i> +1
+                                    800 789 0000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__nav flex-grow-1 d-flex">
+                            <nav
+                                id="mainNav"
+                                class="navbar navbar-expand-lg navbar-light p-0 align-items-stretch"
+                            >
+                                <div
+                                    class="collapse navbar-collapse align-items-stretch"
+                                    id="navbarNav"
+                                >
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item d-flex">
+                                            <a
+                                                class="nav-link d-flex align-items-center active"
+                                                aria-current="page"
+                                                href="#"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a
+                                                class="nav-link d-flex align-items-center"
+                                                href="#"
+                                                >About Us</a
+                                            >
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a
+                                                class="nav-link d-flex align-items-center"
+                                                href="#"
+                                                >Brands</a
+                                            >
+                                            <ul class="sub-nav">
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link"
+                                                        >BMW</a
+                                                    >
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link"
+                                                        >Mercedes</a
+                                                    >
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link"
+                                                        >Ford</a
+                                                    >
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link"
+                                                        >Toyota</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a
+                                                class="nav-link d-flex align-items-center"
+                                                href="#"
+                                                >Range of Cars</a
+                                            >
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a
+                                                class="nav-link d-flex align-items-center"
+                                                href="#"
+                                                >PreOwned Cars</a
+                                            >
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a
+                                                class="nav-link d-flex align-items-center"
+                                                href="#"
+                                                >Contact Us</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <!-- MAIN BEGIN -->
+        <main>
+            <div class="container-xl">
+                <div class="product">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="product-show">
+                                <div class="product-img">
+                                    <img
+                                        src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p1.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="product-slider">
+                                    <div class="product-slider-item">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p2.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product-slider-item">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p4.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product-slider-item">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p3.jpg "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="product-slider-item">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p5.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="product-contact">
+                                    <button>
+                                        <i class="fa-solid fa-phone"></i> Call
+                                        US
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        mall US
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="product__info">
+                                <div class="product__info-head">
+                                    <p>MERCEDES-BENZ</p>
+                                    <h3>Mercedes-Benz M-Class</h3>
+                                    <div class="product__info-head-contacts">
+                                        <a href=""
+                                            ><i class="fa-solid fa-phone"></i>
+                                            +18007890001
+                                        </a>
+                                        <a href=""
+                                            ><i
+                                                class="fa-solid fa-envelope"
+                                            ></i>
+                                            caroto@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__info-body">
+                                    <div class="product__info-body-price">
+                                        $95,000
+                                    </div>
+                                    <div class="product__info-body-table">
+                                        <table
+                                            class="table table-borderless table-striped"
+                                        >
+                                            <thead></thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="1">
+                                                        SPECIFICATIONS
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Condition</td>
+                                                    <td>: Used</td>
+                                                    <td>Mileage</td>
+                                                    <td>: 85,000 miles</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Year</td>
+                                                    <td>: 2015</td>
+                                                    <td>engine</td>
+                                                    <td>: V6 3.0 I</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fuel</td>
+                                                    <td>: Diesel</td>
+                                                    <td>Transmission</td>
+                                                    <td>: Automatic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Color</td>
+                                                    <td>: While</td>
+                                                    <td>Doors</td>
+                                                    <td>: 5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="product__info-foot">
+                                    <a href="" class="product__info-foot-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="product__info-foot-icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="product__info-foot-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="product__info-foot-icon">
+                                        <i
+                                            class="fa-brands fa-google-plus-square"
+                                        ></i>
+                                    </a>
+                                    <a href="" class="product__info-foot-icon">
+                                        <i
+                                            class="fa-brands fa-instagram-square"
+                                        ></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__collateral">
+                    <div class="product__collateral-head">
+                        <ul>
+                            <li class="active">VEHICLE DESCRIPTION</li>
+                            <li>VEHICLE DETAILS</li>
+                            <li>FEATURES</li>
+                            <li>COMMENTS</li>
+                        </ul>
+                    </div>
+                    <div class="product__collateral-body">
+                        <div class="product__collateral-body-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam fringilla augue nec est
+                                tristique auctor. Donec non est at libero
+                                vulputate rutrum. Morbi ornare lectus quis justo
+                                gravida semper. Nulla tellus mi, vulputate
+                                adipiscing cursus eu, suscipit id nulla. Donec a
+                                neque libero. Pellentesque aliquet, sem eget
+                                laoreet ultrices, ipsum metus feugiat sem, quis
+                                fermentum turpis eros eget velit. Donec ac
+                                tempus ante. Fusce ultricies massa massa. Fusce
+                                aliquam, purus eget sagittis vulputate, sapien
+                                libero hendrerit est, sed commodo augue nisi non
+                                neque. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed tempor, lorem et placerat
+                                vestibulum, metus nisi posuere nisl, in accumsan
+                                elit odio quis mi. Cras neque metus, consequat
+                                et blandit et, luctus a nunc. Etiam gravida
+                                vehicula tellus, in imperdiet ligula euismod
+                                eget. Pellentesque habitant morbi tristique
+                                senectus et netus et malesuada fames ac turpis
+                                egestas. Nam erat mi, rutrum at sollicitudin
+                                rhoncus, ultricies posuere erat. Duis convallis,
+                                arcu nec aliquam consequat, purus felis vehicula
+                                felis, a dapibus enim lorem nec augue.
+                            </p>
+                            <p>
+                                Nunc facilisis sagittis ullamcorper. Proin
+                                lectus ipsum, gravida et mattis vulputate,
+                                tristique ut lectus. Sed et lorem nunc.
+                                Vestibulum ante ipsum primis in faucibus orci
+                                luctus et ultrices posuere cubilia Curae; Aenean
+                                eleifend laoreet congue. Vivamus adipiscing nisl
+                                ut dolor dignissim semper. Nulla luctus
+                                malesuada tincidunt. Class aptent taciti
+                                sociosqu ad litora torquent per conubia nostra,
+                                per inceptos himenaeos. Integer enim purus,
+                                posuere at ultricies eu, placerat a felis.
+                                Suspendisse aliquet urna pretium eros convallis
+                                interdum. Quisque in arcu id dui vulputate
+                                mollis eget non arcu. Aenean et nulla purus.
+                                Mauris vel tellus non nunc mattis lobortis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="related__pro">
+                    <div class="related__pro-head">
+                        <h3>Related Products</h3>
+                    </div>
+                    <div class="related__pro-list">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="related__pro-card">
+                                    <div class="related__pro-card-img">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p4.jpg"
+                                            alt=""
+                                        />
+                                        <div class="related__pro-card-option">
+                                            <div class="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-magnifying-glass"
+                                                ></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-phone"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Mercedes-Benz GLE-Class</h3>
+                                    <p>$90,000</p>
+                                    <div class="related__pro-card-foot">
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gauge"></i>
+                                            <span>60000</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gear"></i>
+                                            <span>automantic</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            <span>2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="related__pro-card">
+                                    <div class="related__pro-card-img">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p1.jpg"
+                                            alt=""
+                                        />
+                                        <div class="related__pro-card-option">
+                                            <div class="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-magnifying-glass"
+                                                ></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-phone"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Mercedes-Benz GLE-Class</h3>
+                                    <p>$90,000</p>
+                                    <div class="related__pro-card-foot">
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gauge"></i>
+                                            <span>60000</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gear"></i>
+                                            <span>automantic</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            <span>2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="related__pro-card">
+                                    <div class="related__pro-card-img">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p2.jpg"
+                                            alt=""
+                                        />
+                                        <div class="related__pro-card-option">
+                                            <div class="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-magnifying-glass"
+                                                ></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-phone"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Mercedes-Benz GLE-Class</h3>
+                                    <p>$90,000</p>
+                                    <div class="related__pro-card-foot">
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gauge"></i>
+                                            <span>60000</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gear"></i>
+                                            <span>automantic</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            <span>2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="related__pro-card">
+                                    <div class="related__pro-card-img">
+                                        <img
+                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p3.jpg"
+                                            alt=""
+                                        />
+                                        <div class="related__pro-card-option">
+                                            <div class="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-magnifying-glass"
+                                                ></i>
+                                            </div>
+                                            <div class="">
+                                                <i
+                                                    class="fa-solid fa-phone"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Mercedes-Benz GLE-Class</h3>
+                                    <p>$90,000</p>
+                                    <div class="related__pro-card-foot">
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gauge"></i>
+                                            <span>60000</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i class="fa-solid fa-gear"></i>
+                                            <span>automantic</span>
+                                        </div>
+                                        <div class="card-foot-item">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            <span>2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- MAIN END -->
+
+        <!-- FOOTER BEGIN -->
+        <footer></footer>
+        <!-- FOOTER END -->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                const productItems = $('.product-slider-item');
+                const productImg = $('.product-img img');
+                console.log(productImg[0]);
+                productItems.each(function (index, item) {
+                    item.addEventListener('click', function () {
+                        const img = this.childNodes[1].src;
+                        productImg[0].src = img;
+                    });
+                });
+                $('.product-slider').slick({
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    prevArrow:
+                        "<button type='button' class='slick-prev slick-arrow pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                    nextArrow:
+                        "<button type='button' class='slick-next slick-arrow pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                });
+            });
+        </script>
+    </body>
+</html>
