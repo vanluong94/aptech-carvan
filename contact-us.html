@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact-us.css" />
 
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
     <link rel="stylesheet"
@@ -131,12 +131,14 @@
 
 
     <!-- MAIN BEGIN -->
-    <main class="Contact_Us">
+    <main>
 
         <!-- BRAND -->
         <div class="conTactUsImg container-fluid d-flex justify-content-center shadow-lg">
             <div class="row align-items-center">
-                <h1 class="text-white fw-bold">CONTACT US</h1>
+                <h1 class="text-white"
+                    style="font-size: 46px; font-weight: 700; font-family: 'Saira Condensed', sans-serif;">CONTACT US
+                </h1>
             </div>
         </div>
 
@@ -150,51 +152,53 @@
         </div>
 
         <!-- CONTACT US - COMPANY -->
-        <div class="contactUsCompany container mt-5">
+        <div class="container mt-5">
             <div class="row">
 
                 <!-- CONTACT US -->
                 <div class="contactUsBG col-md py-3 shadow-sm mb-5 me-5">
-                    <div class="row align-items-center">
-                        <h3 class="textContactUs text-left text-uppercase ms-2 fw-bold">contact us</h3>
+                    <div class="contactHeight row align-items-center">
+                        <h3 class="textContactUs text-left text-uppercase ms-2">contact us</h3>
                     </div>
                     <hr class="lineCU mb-4" style="color:red">
                     <form action="" name="formContact" onsubmit="return validateForm()" autocomplete="off">
                         <div class="row gx-2">
                             <div class=" contactInput col">
-                                <label for="" style="font-size: 16px">Your Name (required)</label>
+                                <label for="" style="font-size: 13px;font-weight: 400;">Your Name (required)</label>
                                 <div class="input-group mb-3">
                                     <input name="txtName" type="text" class="form-control rounded-0 py-2"
                                         aria-label="Username" aria-describedby="basic-addon1"
-                                        style="box-shadow: none; border-color: rgb(206, 212, 218);" required>
+                                        style="box-shadow: none; border-color: rgb(206, 212, 218); font-size: 13px;"
+                                        required>
                                 </div>
                             </div>
                             <div class="contactInput col">
-                                <label for="" style="font-size: 16px;">Your Email (required)</label>
+                                <label for="" style="font-size: 13px;font-weight: 400;">Your Email (required)</label>
                                 <div class="input-group mb-3">
                                     <input name="txtEmail" type="email" class="form-control rounded-0 py-2"
                                         aria-label="Email" aria-describedby="basic-addon1"
-                                        style="box-shadow: none; border-color: rgb(206, 212, 218);" required>
+                                        style="box-shadow: none; border-color: rgb(206, 212, 218); font-size: 13px;"
+                                        required>
                                 </div>
-                                <p id="sr_email"></p>
+                                <p id="sr_email" style="font-family:'Open Sans', sans-serif;"></p>
                             </div>
                         </div>
                         <div class="subjectCU container mt-1">
                             <div class="row gx-5">
-                                <label for="" style="font-size: 16px;">Subject</label>
+                                <label for="" style="font-size: 13px;font-weight: 400;">Subject</label>
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control rounded-0 py-2" aria-label="Username"
                                         aria-describedby="basic-addon1"
-                                        style="box-shadow: none; border-color: rgb(206, 212, 218);">
+                                        style="box-shadow: none; border-color: rgb(206, 212, 218); font-size: 13px;">
                                 </div>
                             </div>
                         </div>
                         <div class="subjectCU container mt-1">
                             <div class="row gx-5">
-                                <label for="" style="font-size: 16px;">Your Message</label>
+                                <label for="" style="font-size: 13px;font-weight: 400;">Your Message</label>
                                 <div class="input-group">
                                     <textarea class="form-control rounded-0 pb-5" aria-label="With textarea"
-                                        style="box-shadow: none; border-color: rgb(206, 212, 218);"></textarea>
+                                        style="box-shadow: none; border-color: rgb(206, 212, 218); font-size: 13px;"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +208,7 @@
                                 <h5 class="textButtonCU mb-0">SUBMIT</h5>
                             </button>
                             <div class="">
-                                <div id="notiButton"></div>
+                                <div id="notiButton" style="font-family: 'Open Sans', sans-serif;"></div>
                             </div>
                         </div>
                     </form>
@@ -213,7 +217,7 @@
                 <!-- COMPANY -->
                 <div class="col-md-3 mb-5">
                     <div class="row py-3 bg-dark">
-                        <h5 class="companyStyle text-white fw-bold text-decoration-underline">COMPANY</h5>
+                        <h5 class="companyStyle text-white text-decoration-underline">COMPANY</h5>
                     </div>
                     <div class="companyMenu row shadow-sm">
                         <ul class="companyList">
@@ -226,7 +230,8 @@
                             <li class="ms-2"><a href="">Checkout</a></li>
                             <li class="ms-2"><a href="">Payment</a></li>
                             <li class="ms-2"><a href="">Shipment</a></li>
-                            <li class="ms-2"><a href="" style="color: rgb(220, 53, 69);">Contact Us</a></li>
+                            <li class="ms-2"><a href="" style="color: rgb(220, 53, 69); font-weight: 600;">Contact
+                                    Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -236,7 +241,7 @@
     <!-- MAIN END -->
 
     <!-- FOOTER BEGIN -->
-    <footer class="footer_Full">
+    <footer">
         <!-- ACHIEVEMENTS -->
         <div class="container-fluid p-0" style="background-color: white;">
             <div class="container p-0">
@@ -248,8 +253,8 @@
                                     <img src="/images/icons/world-icon.png" class="Icons d-block" alt="">
                                 </div>
                                 <div class="col">
-                                    <h3 class="AchFont fw-bold m-0 fs-5">World's #1</h3>
-                                    <p class="AchFont m-0" style="color: rgb(137, 137, 137)">Largest Auto portal</p>
+                                    <h3 class="AchFont m-0">World's #1</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Largest Auto portal</p>
                                 </div>
                             </div>
                         </div>
@@ -259,8 +264,8 @@
                                     <img src="/images/icons/car-sold-icon.png" class="Icons d-block" alt="">
                                 </div>
                                 <div class="col">
-                                    <h3 class="AchFont fw-bold m-0 fs-5">Car sold</h3>
-                                    <p class="AchFont m-0" style="color: rgb(137, 137, 137)">Every 4 minute</p>
+                                    <h3 class="AchFont m-0">Car sold</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Every 4 minute</p>
                                 </div>
                             </div>
                         </div>
@@ -270,8 +275,8 @@
                                     <img src="/images/icons/tag-icon.png" class="Icons d-block" alt="">
                                 </div>
                                 <div class="col">
-                                    <h3 class="AchFont fw-bold m-0 fs-5">Offers</h3>
-                                    <p class="AchFont m-0" style="color: rgb(137, 137, 137)">Stay updated pay less</p>
+                                    <h3 class="AchFont m-0">Offers</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Stay updated pay less</p>
                                 </div>
                             </div>
                         </div>
@@ -281,8 +286,8 @@
                                     <img src="/images/icons/compare-icon.png" class="Icons d-block" alt="">
                                 </div>
                                 <div class="col">
-                                    <h3 class="AchFont fw-bold m-0 fs-5">Compare</h3>
-                                    <p class="AchFont m-0" style="color: rgb(137, 137, 137)">Decode the right car</p>
+                                    <h3 class="AchFont m-0">Compare</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Decode the right car</p>
                                 </div>
                             </div>
                         </div>
@@ -295,8 +300,9 @@
         <div class="footerBG container-fluid">
             <div class="container">
                 <div class="row">
-                    <h3 class="text-center" style="color: #fbe122;">NEWSLETTER</h3>
-                    <h2 class="text-center text-white mb-4 fw-bold">GET NOTIFIED OF ANY UPDATES!</h2>
+                    <h3 class="fontFooterTitle text-center" style="color: #fbe122;font-size: 26px;">NEWSLETTER</h3>
+                    <h2 class="fontFooterTitle text-center text-white mb-4" style="font-size: 30px; font-weight:600">GET
+                        NOTIFIED OF ANY UPDATES!</h2>
                 </div>
                 <form action="" autocomplete="off">
                     <div class="row">
@@ -312,16 +318,20 @@
                         <div class="col-md-2 p-2 d-flex justify-content-center mb-2 align-items-center">
                             <button type="button" class="btn rounded-0 border-0 px-5 py-0 btnNewsletter"
                                 style="box-shadow: none; width:100%; height: 58px; background-color:#fbe122;">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                                    </svg>
-                                </div>
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <h6 class="m-0" style="font-size: 18px;">SUBCRIBE</h6>
+                                    <div class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                            fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <h6 class="m-0"
+                                            style="font-size: 18px;font-size: 20px;font-family: 'Saira Condensed', sans-serif;">
+                                            SUBCRIBE</h6>
+                                    </div>
                                 </div>
-                            </div>
                             </button>
                         </div>
                     </div>
@@ -330,82 +340,117 @@
         </div>
 
         <!-- IMFORMATION -->
-        <div class="container-fluid" style="background-color: #23292e;">
+        <div class="container-fluid p-0" style="background-color: #23292e;">
             <div class="container text-white">
                 <div class="row">
                     <div class="col-md mt-5" style="line-height:30px;">
-                        <h5 class="mb-3">SHOWROOM</h5>
-                        <p class="m-0" style="color:rgb(198, 196, 196);">20 W 34th St, New York, NY 10001, USA</p>
-                        <p class="m-0" style="color:rgb(198, 196, 196);">+1 800 123 0000</p>
-                        <p class="m-0" style="color:rgb(198, 196, 196);">ursername@carvan.com</p>
-                        <p class="m-0" style="color:rgb(198, 196, 196);">Mon – Fri : 09am to 06pm</p>
+                        <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">SHOWROOM</h5>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">20 W
+                            34th St, New York, NY 10001, USA</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">+1
+                            800 123 0000</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">
+                            ursername@carvan.com</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">Mon
+                            – Fri : 09am to 06pm</p>
                     </div>
                     <div class="col-md-3 mt-5">
                         <div class="imfDot row" style="line-height:30px;">
-                            <h5 class="mb-3">QUICK LINKS</h5>
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">QUICK LINKS</h5>
                             <ul>
-                                <li><a href="" class="imfLink">Blog</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Blog</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">FAQs</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">FAQs</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Payment</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Payment</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Shipment</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Shipment</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Where is my order?</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Where is my
+                                        order?</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Return Policy</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Return Policy</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-3 mt-5" style="line-height:30px;">
                         <div class="imfDot row">
-                            <h5 class="mb-3">STYLE ADVISOR</h5>
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">STYLE ADVISOR</h5>
                             <ul>
-                                <li><a href="" class="imfLink">My account</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">My account</a>
+                                </li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Information</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Information</a>
+                                </li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Addresses</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Addresses</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Discount</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Discount</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Orders History</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Orders History</a>
+                                </li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Additional Information</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Additional
+                                        Information</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-2 my-5" style="line-height:30px;">
                         <div class="imfDot row">
-                            <h5 class="mb-3">INFORMATION</h5>
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">INFORMATION</h5>
                             <ul>
-                                <li><a href="" class="imfLink">Site Map</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Site Map</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Search Terms</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Search Terms</a>
+                                </li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Advanced Search</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Advanced
+                                        Search</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">About Us</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">About Us</a></li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Contact Us</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Contact Us</a>
+                                </li>
                             </ul>
                             <ul>
-                                <li><a href="" class="imfLink">Suppliers</a></li>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Suppliers</a></li>
                             </ul>
                         </div>
                     </div>
@@ -413,18 +458,25 @@
             </div>
 
             <!-- ICONS -->
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
                 <hr class="bg-white m-0">
                 <div class="row py-4">
                     <div class="col-md d-flex justify-content-center align-items-center">
-                        <a href="https://www.facebook.com/"><img src="/images/icons/facebook.png" alt=""></a>
-                        <a href="https://www.twitter.com/"><img src="/images/icons/twitter.png" alt=""></a>
-                        <a href="#"><img src="/images/icons/google plus.png" alt=""></a>
-                        <a href="#"><img src="/images/icons/rss.png" alt=""></a>
-                        <a href="#"><img src="/images/icons/pinterest.png" alt=""></a>
+                        <div class="rounded-circle me-2 position-relative"><a href="#"><i class="fa-brands fa-facebook-square fa-3x"
+                                    style="color: rgb(60, 91, 155);"></i></a></div>
+                        <div class="rounded-circle me-2"><a href="#"><i class="fa-brands fa-twitter-square fa-3x"
+                                    style="color: rgb(53, 155, 237);"></i></a></div>
+                        <div class="rounded-circle me-2"><a href="#"><i class="fa-brands fa-google-plus-square fa-3x"
+                                    style="color: rgb(227, 55, 41);"></i></a></div>
+                        <div class="rounded-circle me-2"><a href="#"><i class="fa-solid fa-square-rss fa-3x" 
+                                    style="color: rgb(253, 159, 19);"></i></a></div>
+                        <div class="rounded-circle"><a href="#"><i class="fa-brands fa-pinterest-square fa-3x"
+                                    style="color: rgb(203, 32, 39);"></i></a></div>
                     </div>
                     <div class="col-md-5 d-flex justify-content-center align-items-center">
-                        <p class="text-center m-0 py-2" style="color:rgb(198, 196, 196);">© 2022 Carvan. All Rights
+                        <p class="text-center m-0 py-2"
+                            style="color:#aaa; font-size: 13px; font-family: 'Open Sans', sans-serif;">© 2022 Carvan.
+                            All Rights
                             Reserved.</p>
                     </div>
                     <div class="col-md d-flex justify-content-center align-items-center">
@@ -436,19 +488,19 @@
                 </div>
             </div>
         </div>
-    </footer>
+        </footer>
 
-    <!-- ARROW BACK TO HEADER -->
-    <button id="myBtn" title="Back to header"><img src='/images/caret-up-fill.svg' title='Back to header'
-            width='14px' /></button>
-    <!-- FOOTER END -->
+        <!-- ARROW BACK TO HEADER -->
+        <button id="myBtn" title="Back to header"><img src='/images/caret-up-fill.svg' title='Back to header'
+                width='14px' /></button>
+        <!-- FOOTER END -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
-    <script src="/javascript/script.js"></script>
+        <script src="/javascript/contact-us.js"></script>
 </body>
 
 </html>
