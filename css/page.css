@@ -1,0 +1,6 @@
+body.page .page__header {
+    padding-top: 40%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
