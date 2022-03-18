@@ -3,6 +3,8 @@
     --text-color-dark: #121212;
     --text-color-light: #fff;
     --text-hover-color: #ed6663;
+    --text-blue: rgb(80, 178, 252);
+    --border-color:#f2f2f2;
 }
 
 body {
@@ -40,6 +42,10 @@ a:hover {
 
 .font-heading {
     font-family: Saira Condensed, open-sans;
+}
+
+.text-blue {
+    color: var(--text-blue);
 }
 
 body.page {
