@@ -1,18 +1,3 @@
-// HEADER
-document.getElementById('mobileMenuBtn').addEventListener('click', (e) => {
-    document.querySelector('body').classList.toggle('mobile-menu-active');
-})
-
-
-
-
-
-
-
-
-
-
-
 // FORM CONTACT US EMAIL
 function validateForm(){
     let emailPattern = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
@@ -47,26 +32,3 @@ function validateForm(){
         return false
     }
 }
-
-
-
-
-// ARROW BACK TO HEADER
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-document.getElementById('myBtn').addEventListener("click", function () {
-    document.body.scrollTop = 1;
-    document.documentElement.scrollTop = 1;
-});
-
-
-
-

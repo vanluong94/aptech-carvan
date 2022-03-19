@@ -378,7 +378,7 @@ body.mobile-menu-active #mobileMenuBtn > span:last-child {
 }
 
 /* ARROW BACK TO HEADER */
-#myBtn {
+#scrollTopBtn {
     display: none;
     position: fixed;
     bottom: 60px;
@@ -395,7 +395,7 @@ body.mobile-menu-active #mobileMenuBtn > span:last-child {
     height: 35px;
 }
 
-#myBtn:hover {
+#scrollTopBtn:hover {
     background-color: #359BED;
 }
 
