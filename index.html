@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="/lib/bootstrap.min.css">
     <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/lib/slick.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&subset=latin,latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800&subset=latin,latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500,600,700,800&subset=latin,latin-ext">
@@ -17,8 +18,10 @@
     <script src="/lib/slick.min.js"></script>
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
-<body>
+
+<body class="page">
 
     <!-- HEADER BEGIN -->
     <header>
@@ -114,17 +117,717 @@
 
     <!-- MAIN BEGIN -->
     <main>
+        
+        <!-- SLIDER -->
+        <section class="section-home-slider mb-5">
+            <div id="homeSlider">
+                <div class="slider__wrapper">
+                    <div class="slider__content">
+                        <div class="slider-item">
+                            <div class="slider-item__wrapper">
+                                <div class="slider-item__bg" style="background-image: url(image/home-slide-img1.jpg);"></div>
+                                <div class="slider-item__content d-flex">
+                                    <div class="container d-flex flex-column justify-content-center">
+                                        <div class="slider-item__card text-uppercase font-heading text-white">
+                                            <div class="text-blue fs-4">Top brands 2019</div>
+                                            <div class="fw-normal lh-1 display-3 mb-0">Modern-Classic</div>
+                                            <div class="fw-bolder lh-1 display-1 mt-0">Decorative</div>
+                                            <div class="mt-2 mb-4 fs-4">GET 40% OFF ON SELECTED ITEMS</div>
+                                            <a href="#" class="btn btn-primary fs-5">Find cars</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item__wrapper">
+                                <div class="slider-item__bg" style="background-image: url(image/home-slide-img2.jpeg);"></div>
+                                <div class="slider-item__content d-flex">
+                                    <div class="container d-flex flex-column justify-content-center">
+                                        <div class="slider-item__card text-uppercase font-heading text-white">
+                                            <div class="text-blue fs-4">Top brands 2019</div>
+                                            <div class="fw-normal lh-1 display-3 mb-0">Modern-Classic</div>
+                                            <div class="fw-bolder lh-1 display-1 mt-0">Decorative</div>
+                                            <div class="mt-2 mb-4 fs-4">GET 40% OFF ON SELECTED ITEMS</div>
+                                            <a href="#" class="btn btn-primary fs-5">Find cars</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAR TYPE SLIDER -->
+        <section class="my-5 section">
+            <div class="container">
+                <div id="carTypeSlider" class="bg-white box-shadow">
+                    <div class="section__header section__header--dark">
+                        <div class="section__heading">
+                            <h2 class="m-0">BROWSE BY CAR TYPE</h2>
+                        </div>
+                        <div class="section__btns d-flex align-items-center pe-4">
+                            <button type="button" class="slick-prev me-2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <button type="button" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type1.png" alt="">
+                            <div class="font-heading text-uppercase">Sedan</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type2.png" alt="">
+                            <div class="font-heading text-uppercase">Truck</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type3.png" alt="">
+                            <div class="font-heading text-uppercase">Convertible</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type5.png" alt="">
+                            <div class="font-heading text-uppercase">Hybrid</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type6.png" alt="">
+                            <div class="font-heading text-uppercase">Coupe</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type7.png" alt="">
+                            <div class="font-heading text-uppercase">SUV</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type8.png" alt="">
+                            <div class="font-heading text-uppercase">Wagon</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type9.png" alt="">
+                            <div class="font-heading text-uppercase">Hatchback</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type10.png" alt="">
+                            <div class="font-heading text-uppercase">Luxury</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center car-type-item p-4">
+                            <img class="py-2" width="105" src="/image/car-type12.png" alt="">
+                            <div class="font-heading text-uppercase">Pickup</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER -->
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 my-2">
+                        <a href="/list.html"><img src="/image/banner-speakers.png" alt=""></a>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <a href="/list.html"><img src="/image/banner-schedule.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEAL OF THE WEEK -->
+        <section class="my-5">
+            <div class="container">
+                <div id="dealOfTheWeekSlider" class="box-shadow bg-white">
+                    <div class="section__header section__header--bg-dark">
+                        <div class="section__heading">
+                            <h2 class="m-0">DEAL OF THE WEEK</h2>
+                        </div>
+                        <div class="section__btns d-flex align-items-center pe-4">
+                            <button type="button" class="slick-prev me-2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <button type="button" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">USED</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p1.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Mercedes-Benz M-Class</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$95,000</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">85000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2015</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">USED</div>
+                            <a href="" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p2.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Mercedes-Benz GLE-Class</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$80,900</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">60000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">USED</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p3.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Mercedes-Benz GL-Class</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$110,500</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">72500</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2013</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p4.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Mazda Mazda3</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$17,000</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">150000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Manua</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2009</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">USED</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p5.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Hyundai Elantra</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$25,600</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">90000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Manual</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2015</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER -->
+        <section class="my-5">
+            <div class="container-fluid px-0">
+                <div class="backgroundimage mt-5">
+                </div>
+            </div>
+        </section>
+
+        <!-- BEST SELLER CAR -->
+        <section class="my-5">
+            <div class="container">
+                <div id="bestSellerCars" class="box-shadow bg-white">
+                    <div class="section__header section__header--blue section__header--bg-gray">
+                        <div class="section__heading">
+                            <h2 class="m-0">BEST SELLER CARS</h2>
+                        </div>
+                        <div class="section__btns d-flex align-items-center pe-4">
+                            <button type="button" class="slick-prev me-2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <button type="button" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="slick-slider">
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p12-286x143.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Acura Elite Specifications</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$49,500</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">120000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2014</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                            <a href="" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p30-286x143.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Chevrolet Volt</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$43,000</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">15000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2017</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">USED</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p21-286x143.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">2016 Toyota Higlander</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$35,000</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">22500</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p20-286x143.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">BWW 550i</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$60,000</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">90000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2011</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar">
+                            <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                            <a href="#" class="d-block overflow-hidden"><img
+                                    src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p8-286x143.jpg" alt=""
+                                    class="img-fluid"></a>
+                            <h5 class="my-3">Audi Q5</h5>
+                            <div class="line"></div>
+                            <p class="mt-2" style="color: #121212;">$65,000</p>
+                            <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                    <p style="color: #ccc">40000</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-gear" style="color: #ccc"></i>
+                                    <p style="color: #ccc">Automatic</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-calendar" style="color: #ccc"></i>
+                                    <p style="color: #ccc">2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POPULAR BRANDS -->
+        <section class="my-5">
+            <div class="container">
+                <div id="popularBrandsSlider" class="box-shadow bg-white">
+                    <div class="section__header section__header--dark">
+                        <div class="section__heading">
+                            <h2 class="m-0">POPULAR BRANDS</h2>
+                        </div>
+                        <div class="section__btns d-flex align-items-center pe-4">
+                            <button type="button" class="slick-prev me-2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <button type="button" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="slick-slider p-3">
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand1.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand2.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand3.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand4.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand5.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand6.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand5.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand6.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand5.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gridcar borderbrands mx-2">
+                            <img src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/brand6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <!-- MAIN END -->
 
     <!-- FOOTER BEGIN -->
-    <footer>
+    <footer">
+        <!-- ACHIEVEMENTS -->
+        <div class="container-fluid p-0" style="background-color: white;">
+            <div class="container p-0">
+                <div class="AchFull">
+                    <div class="AchIcon row">
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/world-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">World's #1</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Largest Auto portal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/car-sold-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Car sold</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Every 4 minute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/tag-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Offers</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Stay updated pay less</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/compare-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Compare</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Decode the right car</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- NEWSLETTER -->
+        <div class="footerBG container-fluid">
+            <div class="container">
+                <div class="row">
+                    <h3 class="fontFooterTitle text-center" style="color: #fbe122;font-size: 26px;">NEWSLETTER</h3>
+                    <h2 class="fontFooterTitle text-center text-white mb-4" style="font-size: 30px; font-weight:600">GET
+                        NOTIFIED OF ANY UPDATES!</h2>
+                </div>
+                <form action="" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-4 p-2 mb-1">
+                            <div class="form-floating">
+                                <input type="email" class="form-control rounded-0 border-0 w-100"
+                                    style="box-shadow: none; border-color: red;" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Your email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2 p-2 d-flex justify-content-center mb-2 align-items-center">
+                            <button type="button" class="btn rounded-0 border-0 px-5 py-0 btnNewsletter"
+                                style="box-shadow: none; width:100%; height: 58px; background-color:#fbe122;">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                            fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <h6 class="m-0"
+                                            style="font-size: 18px;font-size: 20px;font-family: 'Saira Condensed', sans-serif;">
+                                            SUBCRIBE</h6>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- IMFORMATION -->
+        <div class="container-fluid p-0" style="background-color: #23292e;">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-md mt-5" style="line-height:30px;">
+                        <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">SHOWROOM</h5>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">20 W
+                            34th St, New York, NY 10001, USA</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">+1
+                            800 123 0000</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">
+                            ursername@carvan.com</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">Mon
+                            – Fri : 09am to 06pm</p>
+                    </div>
+                    <div class="col-md-3 mt-5">
+                        <div class="imfDot row" style="line-height:30px;">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">QUICK LINKS</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Blog</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">FAQs</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Payment</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Shipment</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Where is my
+                                        order?</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Return Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5" style="line-height:30px;">
+                        <div class="imfDot row">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">STYLE ADVISOR</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">My account</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Information</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Addresses</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Discount</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Orders History</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Additional
+                                        Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-5" style="line-height:30px;">
+                        <div class="imfDot row">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">INFORMATION</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Site Map</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Search Terms</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Advanced
+                                        Search</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">About Us</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Contact Us</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Suppliers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICONS -->
+            <div class="container-fluid p-0">
+                <hr class="bg-white m-0">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-md-4 d-flex justify-content-sm-start justify-content-center align-items-center p-0">
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#3C5B9B; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-facebook-f" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#359BED; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-twitter" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#E33729; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-google-plus-g" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#FD9F13; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-solid fa-rss" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social"
+                                style="width:38px; height:38px; background-color:#cb2027; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-pinterest" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                        </div>
+                        <div class="col-md d-flex justify-content-center align-items-center p-0">
+                            <p class="text-center m-0 py-2"
+                                style="color:#aaa; font-size: 13px; font-family: 'Open Sans', sans-serif;">© 2022 Carvan.
+                                All Rights
+                                Reserved.</p>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-sm-end justify-content-center align-items-center p-0">
+                            <img src="/image/icons/payment-1.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-2.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-3.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-4.png" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- ARROW BACK TO HEADER -->
+    <button id="myBtn" title="Back to header"><i class="fa-solid fa-chevron-up" title="back to header"></i></button>
     <!-- FOOTER END -->
 
-    <!-- something here -->
-    <!-- add something more -->
+    <script src="/js/template.js"></script>
+    <script src="/js/slidecar.js"></script>
 </body>
 </html>
