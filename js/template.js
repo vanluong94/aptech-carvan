@@ -2,6 +2,22 @@ document.getElementById('mobileMenuBtn').addEventListener('click', (e) => {
     document.querySelector('body').classList.toggle('mobile-menu-active');
 })
 
+// ARROW BACK TO HEADER
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+    }
+}
+
+document.getElementById('scrollTopBtn').addEventListener("click", function () {
+    document.body.scrollTop = 1;
+    document.documentElement.scrollTop = 1;
+});
+
 jQuery('#homeSlider .slider__content').slick({
     prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
@@ -63,8 +79,8 @@ jQuery('#bestSellerCars .slick-slider').slick({
     infinity: true,
     draggable: false,
     arrow: true,
-    prevArrow: '#dealOfTheWeekSlider .slick-prev',
-    nextArrow: '#dealOfTheWeekSlider .slick-next',
+    prevArrow: '#bestSellerCars .slick-prev',
+    nextArrow: '#bestSellerCars .slick-next',
     responsive: [
         {
             breakpoint: 768,
