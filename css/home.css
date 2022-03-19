@@ -1,7 +1,7 @@
 /* HOME SLIDER */
-#homeSlider .slider-item {
+#homeSlider .slider-item .slider-item__wrapper {
     position: relative;
-    height: 600px;
+    padding-top: 42%;
 }
 
 #homeSlider .slider-item__bg, .slider-item__content {
@@ -10,6 +10,11 @@
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+#homeSlider .slider-item__bg {
+    background-size: cover;
+    background-position: center;
 }
 
 #homeSlider .slick-slider {
@@ -100,14 +105,14 @@
 
 .section__heading h2:after{
     content: '';
-    transform: skew(-35deg);
+    transform: skew(-35deg) translate(21%,0);
     position: absolute;
-    width: 100px;
+    width: 100%;
     height: 70px;
     top: 0;
-    left: 190px;
     background: #fbe122;
     z-index: -1;
+    right: 0;
 }
 
 .section__header--dark .section__heading {
@@ -137,8 +142,11 @@
     background-color: #e5e5e5;
 }
 
-
-
+/* POPULAR BRANDS */
+#popularBrandsSlider .slick-slider {
+    margin-left: -0.5rem!important;
+    margin-right: -0.5rem!important;
+}
 /* HEADING STYLE -- END */
 
 .bestsellercars__down{
@@ -173,35 +181,35 @@
     transform: scale(110%);
 }
 
-.line{
+.gridcar .line{
     height: 3px;
     width: 30px;
     background: #ed6663;
 }
 
-.state{
-    width: 60px;
-    height: 30px;
+.gridcar .state{
     background: #ed6663;
     position: absolute;
     left: 20px;
     border-radius: 5px;
     color: #ffffff;
     z-index: 999;
+    font-size: 12px;
+    padding: 3px 10px;
 }
 
-.info{
+.gridcar .info{
     gap: 40px;
     width: 90%;
     border-top: 1px solid var(--bs-gray-300);
     margin: 0 10px;
 }
 
-.info p{
+.gridcar .info p{
     font-family: 'Saira Condensed', sans-serif;
 }
 
-.boxicon{
+.gridcar .boxicon{
     position: absolute;
     z-index: 99;
     visibility: hidden;
@@ -216,7 +224,7 @@
     transition-delay: 0.2s;
 }
 
-.boxicon a{
+.gridcar .boxicon a{
     color: #121212;
     display: block;
     width: 50px;
@@ -228,7 +236,7 @@
     transition: 0.25s;
 }
 
-.boxicon i{
+.gridcar .boxicon i{
     transform: rotate(-45deg);
 }
 
@@ -237,7 +245,7 @@
     opacity: 1;
 }
 
-.boxicon a:hover{
+.gridcar .boxicon a:hover{
     background: #23292e;
     color: #ffffff;
 }
@@ -388,10 +396,6 @@
         font-size: 20px;
     }
 
-    .section__heading h2:after{
-        left: 160px;
-    }
-
     .section__heading1 h2{
         font-size: 20px;
     }
@@ -446,11 +450,6 @@
     .section__heading{
         width: 30%;
     }
-
-    .section__heading h2:after{
-        left: 150px;
-    }
-
     .section__heading1 h2{
         font-size: 18px;
     }
@@ -473,16 +472,6 @@
 
     .section__heading2 h2:after{
         left: 150px;
-    }
-
-    .slick-prev{
-        right: 6%;
-        top: -16%;
-    }
-    
-    .slick-next{
-        right: 1%;
-        top: -16%;
     }
 
     .section__header .slick-prev{
@@ -507,22 +496,16 @@
         font-size: 15px
     }
 
-    .info{
+    .gridcar .info{
         gap: 10px
     }
 
-    .state{
-        width: 40px;
-        height: 25px;
-        font-size: 13px;
-    }
-
-    .boxicon a{
+    .gridcar .boxicon a{
         width: 35px;
         height: 35px;
     }
 
-    .boxicon {
+    .gridcar .boxicon {
         gap: 15px;
     }
 }
@@ -534,10 +517,6 @@
 
     .section__heading{
         width: 30%;
-    }
-
-    .section__heading h2:after{
-        left: 130px;
     }
 
     .section__heading1 h2{
@@ -561,26 +540,6 @@
 
     .section__heading2 h2:after{
         left: 130px;
-    }
-
-    .slick-prev{
-        right: 8%;
-        top: -18%;
-    }
-    
-    .slick-next{
-        right: 1%;
-        top: -18%;
-    }
-
-    .section__header .slick-prev{
-        right: 8%;
-        top: -32%;
-    }
-    
-    .section__header .slick-next{
-        right: 1%;
-        top: -32%;
     }
 
     .gridcar h5{
@@ -595,26 +554,20 @@
         font-size: 13px
     }
 
-    .info p{
+    .gridcar .info p{
         font-size: 13px;
     }
 
-    .info{
+    .gridcar .info{
         gap: 5px
     }
 
-    .state{
-        width: 33px;
-        height: 23px;
-        font-size: 12px;
-    }
-
-    .boxicon a{
+    .gridcar .boxicon a{
         width: 30px;
         height: 30px;
     }
 
-    .boxicon {
+    .gridcar .boxicon {
         gap: 13px;
     }
 }
@@ -626,10 +579,6 @@
     
     .section__heading{
         width: 35%;
-    }
-    
-    .section__heading h2:after{
-        left: 130px;
     }
 
     .section__heading1 h2{
@@ -654,5 +603,17 @@
     
     .section__heading2 h2:after{
         left: 130px;
+    }
+}
+
+@media(max-width: 768px) {
+    #homeSlider .slider-item .slider-item__wrapper {
+        padding-top: 54%;
+    }
+}
+
+@media(max-width: 546px) {
+    #homeSlider .slider-item .slider-item__wrapper {
+        padding-top: 80%;
     }
 }

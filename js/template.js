@@ -12,7 +12,30 @@ jQuery('#carTypeSlider .slick-slider').slick({
     slidesToShow: 8,
     infinite: false,
     prevArrow: '#carTypeSlider .slick-prev',
-    nextArrow: '#carTypeSlider .slick-next'
+    nextArrow: '#carTypeSlider .slick-next',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 jQuery('#dealOfTheWeekSlider .slick-slider').slick({
@@ -22,7 +45,16 @@ jQuery('#dealOfTheWeekSlider .slick-slider').slick({
     draggable: false,
     arrow: true,
     prevArrow: '#dealOfTheWeekSlider .slick-prev',
-    nextArrow: '#dealOfTheWeekSlider .slick-next'
+    nextArrow: '#dealOfTheWeekSlider .slick-next',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+    ]
 });
 
 jQuery('#bestSellerCars .slick-slider').slick({
@@ -32,12 +64,44 @@ jQuery('#bestSellerCars .slick-slider').slick({
     draggable: false,
     arrow: true,
     prevArrow: '#dealOfTheWeekSlider .slick-prev',
-    nextArrow: '#dealOfTheWeekSlider .slick-next'
+    nextArrow: '#dealOfTheWeekSlider .slick-next',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+    ]
 });
 
 jQuery('#popularBrandsSlider .slick-slider').slick({
     slidesToShow: 6,
     draggable: false,
     prevArrow: '#popularBrandsSlider .slick-prev',
-    nextArrow: '#popularBrandsSlider .slick-next'
+    nextArrow: '#popularBrandsSlider .slick-next',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
