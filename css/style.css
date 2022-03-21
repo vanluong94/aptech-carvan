@@ -77,6 +77,10 @@ body.page .page__section {
     background-color: var(--bs-dark);
 }
 
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+
 header {
     font-family: Saira Condensed, open-sans;
     box-shadow: 0 6px 9px 0 rgb(36 39 44 / 20%);
