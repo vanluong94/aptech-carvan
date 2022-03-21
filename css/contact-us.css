@@ -1,0 +1,88 @@
+/* STYLE FROM CONTACT US - COMPANY */
+/* BRAND */
+.conTactUsImg{
+    background-image: url(../image/backgrounds/category-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+}
+
+/* GOOGLE MAP */
+.googleMap{
+    background-color: white;
+}
+
+/* CONTACT US */
+.textContactUs{
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contactHeight{
+    height: 50px;
+}
+
+.contactUsBG{
+    background-color: white;
+    height: 530px;
+}
+
+.lineCU{
+    margin: 0px 5px;
+    padding: 1px;
+}
+
+.contactInput{
+    padding: 0px 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.subjectCU{
+    padding: 0px 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.buttonCU{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #efecec;
+    border-color: #efecec;
+}
+.buttonCU:hover .textButtonCU{
+    color: #fff;
+}
+
+.textButtonCU{
+    font-size: 13px;
+    font-family: Rubik, sans-serif;
+}
+
+/* COMPANY */
+.companyStyle{
+    margin: 0px 0px 0px 8px;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.companyMenu{
+    background-color: white;
+    height: 400px;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+.companyList{
+    list-style-type: none;
+    font-size: large;
+}
+
+.companyList a{
+    color: #898989;
+    line-height: 35px;
+    text-decoration: none;
+} 
+
+.companyList a:hover{
+    color: #121212;
+}

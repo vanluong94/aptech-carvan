@@ -8,18 +8,20 @@
 
     <link rel="stylesheet" href="/lib/bootstrap.min.css">
     <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
+    <!-- <link rel="stylesheet" href="/lib/slick.min.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800&subset=latin,latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500,600,700,800&subset=latin,latin-ext">
-    <link rel="stylesheet" href="https://fontsx.googleapis.com/css?family=Roboto:400%7CSaira+Condensed:400%2C600%2C300%7COpen+Sans:400">
     
     <script src="/lib/jquery.min.js"></script>
-    <!-- <script src="/lib/slick.min.js"></script> -->
+    <script src="/lib/slick.min.js"></script>
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about-us.css">
     <link rel="stylesheet" href="/css/page.css">
     <link rel="stylesheet" href="/css/car-grid.css">
 </head>
-<body class="page page-car-brand">
+
+<body class="page">
 
     <!-- HEADER BEGIN -->
     <header>
@@ -116,16 +118,16 @@
     <!-- MAIN BEGIN -->
     <main>
         <div class="page__header" style="
-            background-image: url('image/bg-brand-bwm.jpeg');
+            background-image: url('image/bg-about-us.png');
             background-position: center 73%;
         ">
-            <div class="container">
-                <div class="page__header-wrapper position-absolute top-50 left-0 translate-middle-y">
-                    <div class="page__title text-light">
-                        <h1 class="page__hero-title display-1 fw-bold mb-0">BWM</h1>
-                        <p class="page__sub-title fs-3">The Ultimate Driving Machine</p>
+            <div class="position-absolute top-50 start-50 translate-middle w-100">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <div class="px-5 py-3 bg-primary shadow-lg">
+                            <div class="fw-bolder h1 display-4 m-0 ">CARVAN</div>
+                        </div>
                     </div>
-                    <a href="#pageHeading" class="btn btn-primary text-uppercase btn-lg">View Details</a>
                 </div>
             </div>
         </div>
@@ -134,264 +136,68 @@
 
                 <!-- ABOUT SECTION -->
                 <div class="page__section py-5 mb-5">
-                    <h2 id="pageHeading" class="h1 fw-bold">About BWM</h2>
+                    <h2 id="pageHeading" class="h1 fw-bold">About Us</h2>
                     <p>
-                        BMW might be known as a luxury and performance car maker today, but the company got off the ground, quite literally, but producing aircraft engines all the way back in 1916. Over the course of more than 100 years, BMW has survived two world wars and, despite its current position as a global automaker, it even came face-to-face with bankruptcy back in the 1960s when things were so bad that Dr. Hans Feith – the chairman of the company’s Supervisory board – suggested merging with Daimler-Benz. That, however, is a story for another time. Since then, the company turned around and has since introduced its M division back in the late 1970s – the performance arm we’ve all grown to love – and is now focused on delivering SUVs and developing electric and hybrid cars. BMW is doing so well these days that it produced more than 2.5 million vehicles globally in 2018 and has now introduced a new halo model – the all-new 8 Series.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut purus et lectus mattis pulvinar eu a elit. Proin finibus lorem pharetra risus ullamcorper suscipit. Fusce ultrices, nibh ut rhoncus suscipit, est lacus ullamcorper enim, in venenatis enim massa in diam. Donec vel augue molestie, faucibus est sit amet, ultrices lacus. Donec erat diam, ullamcorper nec metus et, suscipit posuere nunc. Ut faucibus ex eget posuere venenatis. In aliquet ut odio a consequat. Vestibulum nibh urna, aliquam vitae nisi eget, dictum feugiat elit. Quisque tincidunt, lorem id malesuada semper, nisl purus congue risus, id fringilla sapien dui id arcu.
                     </p>
                 </div>
 
-                <!-- MODELS SECTION -->
                 <div class="page__section py-5 mb-5">
-                    <h2 class="h1 fw-bold">Models</h2>
-
-                    <div class="car-grid">
-                        <div class="row">
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-3-series.png" alt="BMW 3 Series Sedan"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW 3 Series Sedan</a></div>
-                                    <div class="car__price">$95.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gas-pump"></i></div>
-                                                    <div class="text">Gas</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <h2 id="pageEvents" class="h1 fw-bold">Our Events</h2>
+                    <div id="eventTimeline" class="my-5">
+                        <div class="timeline">
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h2>9 May 2022</h2>
+                                    <p>Malcolm Wilson Rally</p>
                                 </div>
                             </div>
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-7-series.png" alt="BMW 7 Series Sedan"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW 7 Series Sedan</a></div>
-                                    <div class="car__price">$83.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gas-pump"></i></div>
-                                                    <div class="text">Gas</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h2>11 Apr 2022</h2>
+                                    <p>Geelong Revival Motoring Festival</p>
                                 </div>
                             </div>
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-x5.png" alt="BMW X5"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW X5</a></div>
-                                    <div class="car__price">$88.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-charging-station"></i></div>
-                                                    <div class="text">Electric</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h2>14 Mar 2022</h2>
+                                    <p>So-Cal SpeedTour</p>
                                 </div>
                             </div>
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-4-series.png" alt="BMW 4 Series"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW 4 Series</a></div>
-                                    <div class="car__price">$105.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-charging-station"></i></div>
-                                                    <div class="text">Electric</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h2>24 Feb 2022</h2>
+                                    <p>Gooding & Co. Geared Online</p>
                                 </div>
                             </div>
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-x1.png" alt="BMW X1"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW X1</a></div>
-                                    <div class="car__price">$99.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-charging-station"></i></div>
-                                                    <div class="text">Electric</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h2>16 Jan 2022</h2>
+                                    <p>Romania Historic Winter Rally</p>
                                 </div>
                             </div>
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-z4.png" alt="BMW Z4"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW Z4</a></div>
-                                    <div class="car__price">$110.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-charging-station"></i></div>
-                                                    <div class="text">Electric</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h2>11 Jan 2022</h2>
+                                    <p>Mecum Kissimmee Auction</p>
                                 </div>
                             </div>
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-7-series.png" alt="BMW 7 Series Sedan"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW 7 Series Sedan</a></div>
-                                    <div class="car__price">$83.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gas-pump"></i></div>
-                                                    <div class="text">Gas</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h2>1 Jan 2022</h2>
+                                    <p>New Year’s Day Classic Gathering</p>
                                 </div>
                             </div>
-                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
-                                <div class="car-item">
-                                    <div class="car__thumbnail">
-                                        <a href="#"><img src="/image/bmw-3-series.png" alt="BMW 3 Series Sedan"></a>
-                                    </div>
-                                    <div class="car__title"><a href="#">BMW 3 Series Sedan</a></div>
-                                    <div class="car__price">$95.000</div>
-                                    <div class="car__specification">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gas-pump"></i></div>
-                                                    <div class="text">Gas</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                                                    <div class="text">Automatic</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="car__s-item">
-                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
-                                                    <div class="text">2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h2>22 December 2021</h2>
+                                    <p>Open Roads Online Auction, December</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h2>4 November 2020</h2>
+                                    <p>Vauxhall – Made in Luton</p>
                                 </div>
                             </div>
                         </div>
@@ -671,6 +477,5 @@
 
     <script src="/lib/bootstrap.bundle.min.js"></script>
     <script src="/js/template.js"></script>
-
 </body>
 </html>
