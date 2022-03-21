@@ -1,158 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Carvan - Car Market</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carvan - Car Market</title>
 
-        <link rel="stylesheet" href="./lib/bootstrap.min.css" />
-        <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&subset=latin,latin-ext"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800&subset=latin,latin-ext"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500,600,700,800&subset=latin,latin-ext"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:400%7CSaira+Condensed:400%2C600%2C300%7COpen+Sans:400"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-        />
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/lib/slick.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800&subset=latin,latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500,600,700,800&subset=latin,latin-ext">
+    
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/slick.min.js"></script>
 
-        <script src="./lib/jquery.min.js"></script>
-        <script src="./lib/bootstrap.bundle.min.js"></script>
-        <script src="./lib/slick.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/css/car-grid.css">
+    <link rel="stylesheet" href="/css/car-detail.css">
+</head>
 
-        <link rel="stylesheet" href="./css/car-detail.css" />
-    </head>
-    <body>
-        <!-- HEADER BEGIN -->
-        <header>
+<body class="page">
+
+    <!-- HEADER BEGIN -->
+    <header>
+        <div class="header__bg">
+            <div class="header__bg-wrapper">
+                <div class="header---left">
+                    <div class="header__logo"></div>
+                </div>
+                <div class="header--right">
+                    <div class="header__topbar"></div>
+                    <div class="header__nav"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
             <div class="container">
-                <div class="header__content">
-                    <div class="header--left d-flex align-items-center">
+                <div class="header__content-wrapper">
+                    <div class="header--left d-flex align-items-center justify-content-between justify-content-lg-center">
                         <div class="header__logo">
-                            <h1 class="header__logo-text font-weight-bolder">
-                                CARVAN
-                            </h1>
+                            <a href="/index.html"><h1 class="header__logo-text fw-bolder mx-lg-5 my-0">CARVAN</h1></a>
+                        </div>
+                        <div class="header__mobile-menu-btn d-lg-none">
+                            <button class="btn" id="mobileMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
                         </div>
                     </div>
                     <div class="header--right flex-grow-1 d-flex flex-column">
-                        <div
-                            class="header__top-bar row align-items-center justify-content-between"
-                        >
-                            <div
-                                class="header__marquee col-6 d-flex align-items-center"
-                            >
+                        <div class="header__topbar row align-items-center justify-content-between">
+                            <div class="header__marquee col-12 col-lg-6 d-flex align-items-center">
                                 <marquee direction="left">
-                                    <span
-                                        >Hot days! - <span>50%</span> Get ready
-                                        for summer!</span
-                                    >
-                                    <span
-                                        >Save up to <span>40%</span> Hurry
-                                        limited offer!</span
-                                    >
+                                    <span>Hot days! - <span>50%</span> Get ready for summer!</span>
+                                    <span>Save up to <span>40%</span> Hurry limited offer!</span>
                                 </marquee>
                             </div>
-                            <div
-                                class="header__meta col-6 d-flex justify-content-end"
-                            >
-                                <div class="header__meta-item ml-3">
-                                    <i class="fa-regular fa-clock mr-1"></i> Mon
-                                    - Fri : 09am to 06pm
+                            <div class="header__meta col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                                <div class="header__meta-item ms-3">
+                                    <i class="fa-regular fa-clock mr-1"></i> Mon - Fri : 09am to 06pm
                                 </div>
-                                <div class="header__meta-item ml-3">
-                                    <i class="fa-solid fa-phone mr-1"></i> +1
-                                    800 789 0000
+                                <div class="header__meta-item ms-3">
+                                    <i class="fa-solid fa-phone mr-1"></i> +1 800 789 0000
                                 </div>
                             </div>
                         </div>
                         <div class="header__nav flex-grow-1 d-flex">
-                            <nav
-                                id="mainNav"
-                                class="navbar navbar-expand-lg navbar-light p-0 align-items-stretch"
-                            >
-                                <div
-                                    class="collapse navbar-collapse align-items-stretch"
-                                    id="navbarNav"
-                                >
+                            <nav id="mainNav" class="navbar navbar-expand-lg navbar-light p-0 align-items-stretch">
+                                <div class="collapse navbar-collapse align-items-stretch" id="navbarNav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item d-flex">
-                                            <a
-                                                class="nav-link d-flex align-items-center active"
-                                                aria-current="page"
-                                                href="#"
-                                                >Home</a
-                                            >
+                                            <a class="nav-link d-flex align-items-center active" aria-current="page" href="/index.html">Home</a>
                                         </li>
                                         <li class="nav-item d-flex">
-                                            <a
-                                                class="nav-link d-flex align-items-center"
-                                                href="#"
-                                                >About Us</a
-                                            >
+                                            <a class="nav-link d-flex align-items-center" href="/about-us.html">About Us</a>
                                         </li>
                                         <li class="nav-item d-flex">
-                                            <a
-                                                class="nav-link d-flex align-items-center"
-                                                href="#"
-                                                >Brands</a
-                                            >
+                                            <a class="nav-link d-flex align-items-center" href="#">Brands</a>
                                             <ul class="sub-nav">
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link"
-                                                        >BMW</a
-                                                    >
+                                                    <a href="/list.html" class="nav-link">BMW</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link"
-                                                        >Mercedes</a
-                                                    >
+                                                    <a href="/list.html" class="nav-link">Mercedes</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link"
-                                                        >Ford</a
-                                                    >
+                                                    <a href="/list.html" class="nav-link">Ford</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link"
-                                                        >Toyota</a
-                                                    >
+                                                    <a href="/list.html" class="nav-link">Toyota</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="nav-item d-flex">
-                                            <a
-                                                class="nav-link d-flex align-items-center"
-                                                href="#"
-                                                >Range of Cars</a
-                                            >
+                                            <a class="nav-link d-flex align-items-center" href="/list.html">Range of Cars</a>
                                         </li>
                                         <li class="nav-item d-flex">
-                                            <a
-                                                class="nav-link d-flex align-items-center"
-                                                href="#"
-                                                >PreOwned Cars</a
-                                            >
+                                            <a class="nav-link d-flex align-items-center" href="/list.html">PreOwned Cars</a>
                                         </li>
                                         <li class="nav-item d-flex">
-                                            <a
-                                                class="nav-link d-flex align-items-center"
-                                                href="#"
-                                                >Contact Us</a
-                                            >
+                                            <a class="nav-link d-flex align-items-center" href="/contact-us.html">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -161,477 +111,808 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- HEADER END -->
+        </div>
+    </header>
+    <!-- HEADER END -->
 
-        <!-- MAIN BEGIN -->
-        <main>
-            <div class="container-xl">
-                <div class="product">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="product-show">
-                                <div class="product-img">
-                                    <img
-                                        src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p1.jpg"
-                                        alt=""
-                                    />
+    <!-- MAIN BEGIN -->
+    <main>
+        <div class="container py-5">
+
+            <!-- PRODUCT -->
+            <div class="product box-shadow mb-5">
+                <div class="row">
+                    <div class="product-img-box col-md-5 col-12">
+                        <div class="product-show">
+                            <div class="product-img">
+                                <img src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p1.jpg" alt="" />
+                            </div>
+                            <div class="product-slider">
+                                <div class="product-slider-item">
+                                    <img src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p2.jpg" alt="" />
                                 </div>
-                                <div class="product-slider">
-                                    <div class="product-slider-item">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p2.jpg"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="product-slider-item">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p4.jpg"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="product-slider-item">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p3.jpg "
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="product-slider-item">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p5.jpg"
-                                            alt=""
-                                        />
-                                    </div>
+                                <div class="product-slider-item">
+                                    <img src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p4.jpg" alt="" />
                                 </div>
-                                <div class="product-contact">
-                                    <button>
-                                        <i class="fa-solid fa-phone"></i> Call
-                                        US
-                                    </button>
-                                    <button>
-                                        <i class="fa-solid fa-envelope"></i>
-                                        mall US
-                                    </button>
+                                <div class="product-slider-item">
+                                    <img src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p3.jpg " alt="" />
+                                </div>
+                                <div class="product-slider-item">
+                                    <img src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p5.jpg" alt="" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="product__info">
-                                <div class="product__info-head">
-                                    <p>MERCEDES-BENZ</p>
-                                    <h3>Mercedes-Benz M-Class</h3>
-                                    <div class="product__info-head-contacts">
-                                        <a href=""
-                                            ><i class="fa-solid fa-phone"></i>
-                                            +18007890001
-                                        </a>
-                                        <a href=""
-                                            ><i
-                                                class="fa-solid fa-envelope"
-                                            ></i>
-                                            caroto@gmail.com
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product__info-body">
-                                    <div class="product__info-body-price">
-                                        $95,000
-                                    </div>
-                                    <div class="product__info-body-table">
-                                        <table
-                                            class="table table-borderless table-striped"
-                                        >
-                                            <thead></thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="1">
-                                                        SPECIFICATIONS
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Condition</td>
-                                                    <td>: Used</td>
-                                                    <td>Mileage</td>
-                                                    <td>: 85,000 miles</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Year</td>
-                                                    <td>: 2015</td>
-                                                    <td>engine</td>
-                                                    <td>: V6 3.0 I</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Fuel</td>
-                                                    <td>: Diesel</td>
-                                                    <td>Transmission</td>
-                                                    <td>: Automatic</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Color</td>
-                                                    <td>: While</td>
-                                                    <td>Doors</td>
-                                                    <td>: 5</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="product__info-foot">
-                                    <a href="" class="product__info-foot-icon">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="" class="product__info-foot-icon">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                    <a href="" class="product__info-foot-icon">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="" class="product__info-foot-icon">
-                                        <i
-                                            class="fa-brands fa-google-plus-square"
-                                        ></i>
-                                    </a>
-                                    <a href="" class="product__info-foot-icon">
-                                        <i
-                                            class="fa-brands fa-instagram-square"
-                                        ></i>
-                                    </a>
-                                </div>
+                            <div class="product-contact">
+                                <a href="tel:19001000" class="btn btn-lg btn-call d-block w-100 mb-3 font-heading">
+                                    <i class="fa-solid fa-phone me-1"></i> Call Us
+                                </button>
+                                <a href="mailto:example@aptech.vn" class="btn btn-lg btn-email d-block w-100 font-heading">
+                                    <i class="fa-solid fa-envelope me-1"></i> Email Us
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="product__collateral">
-                    <div class="product__collateral-head">
-                        <ul>
-                            <li class="active">VEHICLE DESCRIPTION</li>
-                            <li>VEHICLE DETAILS</li>
-                            <li>FEATURES</li>
-                            <li>COMMENTS</li>
-                        </ul>
-                    </div>
-                    <div class="product__collateral-body">
-                        <div class="product__collateral-body-text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam fringilla augue nec est
-                                tristique auctor. Donec non est at libero
-                                vulputate rutrum. Morbi ornare lectus quis justo
-                                gravida semper. Nulla tellus mi, vulputate
-                                adipiscing cursus eu, suscipit id nulla. Donec a
-                                neque libero. Pellentesque aliquet, sem eget
-                                laoreet ultrices, ipsum metus feugiat sem, quis
-                                fermentum turpis eros eget velit. Donec ac
-                                tempus ante. Fusce ultricies massa massa. Fusce
-                                aliquam, purus eget sagittis vulputate, sapien
-                                libero hendrerit est, sed commodo augue nisi non
-                                neque. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Sed tempor, lorem et placerat
-                                vestibulum, metus nisi posuere nisl, in accumsan
-                                elit odio quis mi. Cras neque metus, consequat
-                                et blandit et, luctus a nunc. Etiam gravida
-                                vehicula tellus, in imperdiet ligula euismod
-                                eget. Pellentesque habitant morbi tristique
-                                senectus et netus et malesuada fames ac turpis
-                                egestas. Nam erat mi, rutrum at sollicitudin
-                                rhoncus, ultricies posuere erat. Duis convallis,
-                                arcu nec aliquam consequat, purus felis vehicula
-                                felis, a dapibus enim lorem nec augue.
-                            </p>
-                            <p>
-                                Nunc facilisis sagittis ullamcorper. Proin
-                                lectus ipsum, gravida et mattis vulputate,
-                                tristique ut lectus. Sed et lorem nunc.
-                                Vestibulum ante ipsum primis in faucibus orci
-                                luctus et ultrices posuere cubilia Curae; Aenean
-                                eleifend laoreet congue. Vivamus adipiscing nisl
-                                ut dolor dignissim semper. Nulla luctus
-                                malesuada tincidunt. Class aptent taciti
-                                sociosqu ad litora torquent per conubia nostra,
-                                per inceptos himenaeos. Integer enim purus,
-                                posuere at ultricies eu, placerat a felis.
-                                Suspendisse aliquet urna pretium eros convallis
-                                interdum. Quisque in arcu id dui vulputate
-                                mollis eget non arcu. Aenean et nulla purus.
-                                Mauris vel tellus non nunc mattis lobortis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="related__pro">
-                    <div class="related__pro-head">
-                        <h3>Related Products</h3>
-                    </div>
-                    <div class="related__pro-list">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="related__pro-card">
-                                    <div class="related__pro-card-img">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p4.jpg"
-                                            alt=""
-                                        />
-                                        <div class="related__pro-card-option">
-                                            <div class="">
-                                                <i class="fa-solid fa-link"></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-magnifying-glass"
-                                                ></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-phone"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3>Mercedes-Benz GLE-Class</h3>
-                                    <p>$90,000</p>
-                                    <div class="related__pro-card-foot">
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gauge"></i>
-                                            <span>60000</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gear"></i>
-                                            <span>automantic</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i
-                                                class="fa-solid fa-calendar-days"
-                                            ></i>
-                                            <span>2016</span>
-                                        </div>
-                                    </div>
+                    <div class="product-shop col-md-7 col-12">
+                        <div class="product__info">
+                            <div class="product__info-head">
+                                <div class="product__brand">MERCEDES-BENZ</div>
+                                <h1 class="product__title">Mercedes-Benz M-Class</h1>
+                                <div class="product__info-head-contacts">
+                                    <a href="tel:19001000" class="me-3 text-muted small"><i class="fa-solid fa-phone me-1"></i>+19001000</a>
+                                    <a href="mailto:example@aptech.vn" class="text-muted small"><i class="fa-solid fa-envelope me-1"></i>example@aptech.vn</a>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="related__pro-card">
-                                    <div class="related__pro-card-img">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p1.jpg"
-                                            alt=""
-                                        />
-                                        <div class="related__pro-card-option">
-                                            <div class="">
-                                                <i class="fa-solid fa-link"></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-magnifying-glass"
-                                                ></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-phone"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3>Mercedes-Benz GLE-Class</h3>
-                                    <p>$90,000</p>
-                                    <div class="related__pro-card-foot">
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gauge"></i>
-                                            <span>60000</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gear"></i>
-                                            <span>automantic</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i
-                                                class="fa-solid fa-calendar-days"
-                                            ></i>
-                                            <span>2016</span>
-                                        </div>
-                                    </div>
+                            <div class="product__info-body">
+                                <div class="product__info-body-price font-heading">
+                                    $95,000
+                                </div>
+                                <div class="product__info-body-table border my-4">
+                                    <div class="section__heading pe-3 m-0"><span class="section__heading-text text-uppercase">Specifications</span></div>
+                                    <table class="table table-borderless spec-table w-100 m-0">
+                                        <tbody>
+                                            <tr>
+                                                <th>Condition</th>
+                                                <td><span itemprop="itemCondition" class="wpcm-vehicle-data">Used</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Mileage</th>
+                                                <td><span itemprop="mileageFromOdometer" class="wpcm-vehicle-data">85,000 miles</span> </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Year</th>
+                                                <td><span itemprop="dateVehicleFirstRegistered" class="wpcm-vehicle-data">07-2015</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Engine</th>
+                                                <td><span itemprop="vehicleEngine" class="wpcm-vehicle-data">V6 3,0 l</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fuel</th>
+                                                <td><span itemprop="fuelType" class="wpcm-vehicle-data">Diesel</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Transmission</th>
+                                                <td><span itemprop="vehicleTransmission" class="wpcm-vehicle-data">Automatic</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Color</th>
+                                                <td><span itemprop="color" class="wpcm-vehicle-data">White</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Doors</th>
+                                                <td><span itemprop="numberOfDoors" class="wpcm-vehicle-data">5</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="related__pro-card">
-                                    <div class="related__pro-card-img">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p2.jpg"
-                                            alt=""
-                                        />
-                                        <div class="related__pro-card-option">
-                                            <div class="">
-                                                <i class="fa-solid fa-link"></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-magnifying-glass"
-                                                ></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-phone"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3>Mercedes-Benz GLE-Class</h3>
-                                    <p>$90,000</p>
-                                    <div class="related__pro-card-foot">
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gauge"></i>
-                                            <span>60000</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gear"></i>
-                                            <span>automantic</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i
-                                                class="fa-solid fa-calendar-days"
-                                            ></i>
-                                            <span>2016</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="related__pro-card">
-                                    <div class="related__pro-card-img">
-                                        <img
-                                            src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p3.jpg"
-                                            alt=""
-                                        />
-                                        <div class="related__pro-card-option">
-                                            <div class="">
-                                                <i class="fa-solid fa-link"></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-magnifying-glass"
-                                                ></i>
-                                            </div>
-                                            <div class="">
-                                                <i
-                                                    class="fa-solid fa-phone"
-                                                ></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3>Mercedes-Benz GLE-Class</h3>
-                                    <p>$90,000</p>
-                                    <div class="related__pro-card-foot">
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gauge"></i>
-                                            <span>60000</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i class="fa-solid fa-gear"></i>
-                                            <span>automantic</span>
-                                        </div>
-                                        <div class="card-foot-item">
-                                            <i
-                                                class="fa-solid fa-calendar-days"
-                                            ></i>
-                                            <span>2016</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="product__info-foot">
+                                <a href="" class="product__info-foot-icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="product__info-foot-icon">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="" class="product__info-foot-icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="product__info-foot-icon">
+                                    <i class="fa-brands fa-google-plus-square"></i>
+                                </a>
+                                <a href="" class="product__info-foot-icon">
+                                    <i class="fa-brands fa-instagram-square"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <!-- MAIN END -->
 
-        <!-- FOOTER BEGIN -->
-        <footer>
-            <div class="our-features-box">
-                <div class="container">
-                    <ul class="container-box">
+            <!-- SUMMARY -->
+            <div class="product__collateral box-shadow mb-5">
+                <div class="product__collateral-head font-heading">
+                    <ul role="tablist" class="nav nav-pills">
                         <li>
-                            <div class="feature-box">
-                                <div class="icon-truck"><img
-                                        src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/world-icon.png"
-                                        alt="World's #1"></div>
-                                <div class="content">
-                                    <h6>World's #1</h6>
-                                    <p>Largest Auto portal</p>
-                                </div>
-                            </div>
+                            <button type="button" class="active btn tab-btn h5 mb-0" data-bs-toggle="pill" data-bs-target="#description" role="tab">VEHICLE DESCRIPTION</button>
                         </li>
                         <li>
-                            <div class="feature-box">
-                                <div class="icon-truck"><img
-                                        src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/car-sold-icon.png"
-                                        alt="Car sold"></div>
-                                <div class="content">
-                                    <h6>Car sold</h6>
-                                    <p>Every 4 minute</p>
-                                </div>
-                            </div>
+                            <button type="button" class="btn tab-btn h5 mb-0" data-bs-toggle="pill" data-bs-target="#details" role="tab">VEHICLE DETAILS</button>
                         </li>
                         <li>
-                            <div class="feature-box">
-                                <div class="icon-truck"><img
-                                        src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/tag-icon.png"
-                                        alt="Offers"></div>
-                                <div class="content">
-                                    <h6>Offers</h6>
-                                    <p>Stay updated pay less</p>
-                                </div>
-                            </div>
+                            <button type="button" class="btn tab-btn h5 mb-0" data-bs-toggle="pill" data-bs-target="#features" role="tab">FEATURES</button>
                         </li>
                         <li>
-                            <div class="feature-box">
-                                <div class="icon-truck"><img
-                                        src="https://klbtheme.com/harrier/wp-content/uploads/2019/05/compare-icon.png"
-                                        alt="Compare"></div>
-                                <div class="content">
-                                    <h6>Compare</h6>
-                                    <p>Decode the right car</p>
-                                </div>
-                            </div>
+                            <button type="button" class="btn tab-btn h5 mb-0" data-bs-toggle="pill" data-bs-target="#comments" role="tab">COMMENTS</button>
                         </li>
                     </ul>
                 </div>
+                <div class="tab-content py-4 px-2" id="pills-tabContent">
+
+                    <!-- DESCRIPTION START -->
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at
+                            libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu,
+                            suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis
+                            fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis
+                            vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras
+                            neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam erat mi, rutrum at
+                            sollicitudin rhoncus, ultricies posuere erat. Duis convallis, arcu nec aliquam consequat, purus felis vehicula felis, a
+                            dapibus enim lorem nec augue.
+                            
+                            Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem
+                            nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet
+                            congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu,
+                            placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget
+                            non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.
+                        </p>
+                    </div>
+                    <!-- DESCRIPTION END -->
+
+                    <!-- DETAILS START -->
+                    <div class="tab-pane fade" id="details" role="tabpanel">
+                        <table class="table table-borderless spec-table">
+                            <tbody>
+                                <tr>
+                                    <th>Condition</th>
+                                    <td><span itemprop="itemCondition" class="wpcm-vehicle-data">Used</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Make</th>
+                                    <td><span itemprop="manufacturer" class="wpcm-vehicle-data">Mercedes-Benz</span> </td>
+                                </tr>
+                                <tr>
+                                    <th>Model</th>
+                                    <td><span itemprop="model" class="wpcm-vehicle-data">Sprinter</span> </td>
+                                </tr>
+                                <tr>
+                                    <th>Year</th>
+                                    <td><span itemprop="dateVehicleFirstRegistered" class="wpcm-vehicle-data">07-2015</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Price</th>
+                                    <td><span class="wpcm-vehicle-data">$95,000</span> </td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage</th>
+                                    <td><span itemprop="mileageFromOdometer" class="wpcm-vehicle-data">85,000 miles</span> </td>
+                                </tr>
+                                <tr>
+                                    <th>Fuel</th>
+                                    <td><span itemprop="fuelType" class="wpcm-vehicle-data">Diesel</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Color</th>
+                                    <td><span itemprop="color" class="wpcm-vehicle-data">White</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Body Style</th>
+                                    <td><span class="wpcm-vehicle-data">SUV</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission</th>
+                                    <td><span itemprop="vehicleTransmission" class="wpcm-vehicle-data">Automatic</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Doors</th>
+                                    <td><span itemprop="numberOfDoors" class="wpcm-vehicle-data">5</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Engine</th>
+                                    <td><span itemprop="vehicleEngine" class="wpcm-vehicle-data">V6 3,0 l</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Power</th>
+                                    <td><span itemprop="enginePower" class="wpcm-vehicle-data">179 kW (240 hp)</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- DETAILS END -->
+
+                    <!-- FEATURES START -->
+                    <div class="tab-pane fade" id="features" role="tabpanel">
+                        <table class="table table-borderless spec-table">
+                            <tbody>
+                                <tr>
+                                    <th class="label-spec">ABS</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">Air Conditioner</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">AntiLock Braking System</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">Auxiliary heating</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">Bluetooth</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">CD player</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">Central locking</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">Leather Seats</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">Power Steering</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <th class="label-spec">Power Windows</th>
+                                    <td class="value-spec"> <i class="fa fa-check-circle text-success"></i> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- FEATURES END -->
+
+                    <!-- COMMENTS START -->
+                    <div class="tab-pane fade" id="comments" role="tabpanel">
+
+                        <ul class="comments-list list-unstyled">
+                            <li class="comment-item">
+                                <div class="comment-item__left">
+                                    <div class="comment-item__avatar">
+                                        <a href="#">
+                                            <img src="/image/user.png" alt="User">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="comment-item__right">
+                                    <div class="comment-item__meta">
+                                        <span class="comment-item__author fw-bold">John Doe</span> - <span class="comment-item__datetime">May 20, 2021</span>
+                                    </div>
+                                    <div class="comment-item__content">
+                                        <p class="m-0">
+                                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.
+                                            Proin eget tortor risus. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            
+                                            Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit
+                                            amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget
+                                            consectetur sed, convallis at tellus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment-item">
+                                <div class="comment-item__left">
+                                    <div class="comment-item__avatar">
+                                        <a href="#">
+                                            <img src="/image/user.png" alt="User">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="comment-item__right">
+                                    <div class="comment-item__meta">
+                                        <span class="comment-item__author fw-bold">Jane Doe</span> - <span class="comment-item__datetime">May 20,
+                                            2021</span>
+                                    </div>
+                                    <div class="comment-item__content">
+                                        <p class="m-0">
+                                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero
+                                            malesuada feugiat.
+                                            Proin eget tortor risus. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.
+                            
+                                            Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem
+                                            ipsum dolor sit
+                                            amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo,
+                                            lacinia eget
+                                            consectetur sed, convallis at tellus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment-item">
+                                <div class="comment-item__left">
+                                    <div class="comment-item__avatar">
+                                        <a href="#">
+                                            <img src="/image/user.png" alt="User">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="comment-item__right">
+                                    <div class="comment-item__meta">
+                                        <span class="comment-item__author fw-bold">John Doe</span> - <span class="comment-item__datetime">May 20,
+                                            2021</span>
+                                    </div>
+                                    <div class="comment-item__content">
+                                        <p class="m-0">
+                                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero
+                                            malesuada feugiat.
+                                            Proin eget tortor risus. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit.
+                            
+                                            Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem
+                                            ipsum dolor sit
+                                            amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo,
+                                            lacinia eget
+                                            consectetur sed, convallis at tellus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <form action="" id="commentForm" onsubmit="() => false">
+                            <div class="h5">Leave a comment</div>
+                            <p>Your email address will not be published. Required fields are marked <code>*</code></p>
+                            
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="commentContent" style="height: 100px" required></textarea>
+                                <label for="commentContent">Comments *</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="commentName" placeholder="John Doe" required>
+                                <label for="commentName">Name *</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="commentEmail" placeholder="name@example.com" required>
+                                <label for="commentEmail">Email address *</label>
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg text-uppercase px-5">Post comment</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- COMMENTS END -->
+                </div>
             </div>
-    
-        </footer>
-        
-        <script
-            type="text/javascript"
-            src="https://code.jquery.com/jquery-1.11.0.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-        ></script>
-        <script>
-            $(document).ready(function () {
-                const productItems = $('.product-slider-item');
-                const productImg = $('.product-img img');
-                console.log(productImg[0]);
-                productItems.each(function (index, item) {
-                    item.addEventListener('click', function () {
-                        const img = this.childNodes[1].src;
-                        productImg[0].src = img;
-                    });
-                });
-                $('.product-slider').slick({
-                    infinite: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    prevArrow:
-                        "<button type='button' class='slick-prev slick-arrow pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-                    nextArrow:
-                        "<button type='button' class='slick-next slick-arrow pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-                });
-            });
-        </script>
-    </body>
+
+            <!-- RELATED -->
+            <div class="related__pro box-shadow">
+                <div class="section__header">
+                    <div class="section__heading">
+                        <h2 class="section__heading-text m-0">Related Vehicles</h2>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="car-grid">
+                        <div class="row">
+                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
+                                <div class="car-item">
+                                    <div class="car__thumbnail">
+                                        <a href="#"><img src="/image/bmw-3-series.png" alt="BMW 3 Series Sedan"></a>
+                                    </div>
+                                    <div class="car__title"><a href="#">BMW 3 Series Sedan</a></div>
+                                    <div class="car__price">$95.000</div>
+                                    <div class="car__specification">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-gas-pump"></i></div>
+                                                    <div class="text">Gas</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                                                    <div class="text">Automatic</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                                    <div class="text">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
+                                <div class="car-item">
+                                    <div class="car__thumbnail">
+                                        <a href="#"><img src="/image/bmw-7-series.png" alt="BMW 7 Series Sedan"></a>
+                                    </div>
+                                    <div class="car__title"><a href="#">BMW 7 Series Sedan</a></div>
+                                    <div class="car__price">$83.000</div>
+                                    <div class="car__specification">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-gas-pump"></i></div>
+                                                    <div class="text">Gas</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                                                    <div class="text">Automatic</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                                    <div class="text">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
+                                <div class="car-item">
+                                    <div class="car__thumbnail">
+                                        <a href="#"><img src="/image/bmw-x5.png" alt="BMW X5"></a>
+                                    </div>
+                                    <div class="car__title"><a href="#">BMW X5</a></div>
+                                    <div class="car__price">$88.000</div>
+                                    <div class="car__specification">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-charging-station"></i></div>
+                                                    <div class="text">Electric</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                                                    <div class="text">Automatic</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                                    <div class="text">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-item-col col-lg-3 col-md-4 col-sm-6">
+                                <div class="car-item">
+                                    <div class="car__thumbnail">
+                                        <a href="#"><img src="/image/bmw-4-series.png" alt="BMW 4 Series"></a>
+                                    </div>
+                                    <div class="car__title"><a href="#">BMW 4 Series</a></div>
+                                    <div class="car__price">$105.000</div>
+                                    <div class="car__specification">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-charging-station"></i></div>
+                                                    <div class="text">Electric</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                                                    <div class="text">Automatic</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="car__s-item">
+                                                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                                    <div class="text">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER BEGIN -->
+    <footer">
+        <!-- ACHIEVEMENTS -->
+        <div class="container-fluid p-0" style="background-color: white;">
+            <div class="container p-0">
+                <div class="AchFull">
+                    <div class="AchIcon row">
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/world-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">World's #1</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Largest Auto portal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/car-sold-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Car sold</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Every 4 minute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/tag-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Offers</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Stay updated pay less</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/compare-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Compare</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Decode the right car</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="footerBG container-fluid">
+            <div class="container">
+                <div class="row">
+                    <h3 class="fontFooterTitle text-center" style="color: #fbe122;font-size: 26px;">NEWSLETTER</h3>
+                    <h2 class="fontFooterTitle text-center text-white mb-4" style="font-size: 30px; font-weight:600">GET
+                        NOTIFIED OF ANY UPDATES!</h2>
+                </div>
+                <form action="" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-4 p-2 mb-1">
+                            <div class="form-floating">
+                                <input type="email" class="form-control rounded-0 border-0 w-100"
+                                    style="box-shadow: none; border-color: red;" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Your email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2 p-2 d-flex justify-content-center mb-2 align-items-center">
+                            <button type="button" class="btn rounded-0 border-0 px-5 py-0 btnNewsletter"
+                                style="box-shadow: none; width:100%; height: 58px; background-color:#fbe122;">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                            fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <h6 class="m-0"
+                                            style="font-size: 18px;font-size: 20px;font-family: 'Saira Condensed', sans-serif;">
+                                            SUBCRIBE</h6>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- IMFORMATION -->
+        <div class="container-fluid p-0" style="background-color: #23292e;">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-md mt-5" style="line-height:30px;">
+                        <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">SHOWROOM</h5>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">20 W
+                            34th St, New York, NY 10001, USA</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">+1
+                            800 123 0000</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">
+                            ursername@carvan.com</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">Mon
+                            – Fri : 09am to 06pm</p>
+                    </div>
+                    <div class="col-md-3 mt-5">
+                        <div class="imfDot row" style="line-height:30px;">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">QUICK LINKS</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Blog</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">FAQs</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Payment</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Shipment</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Where is my
+                                        order?</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Return Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5" style="line-height:30px;">
+                        <div class="imfDot row">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">STYLE ADVISOR</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">My account</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Information</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Addresses</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Discount</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Orders History</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Additional
+                                        Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-5" style="line-height:30px;">
+                        <div class="imfDot row">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">INFORMATION</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Site Map</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Search Terms</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Advanced
+                                        Search</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">About Us</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Contact Us</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Suppliers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICONS -->
+            <div class="container-fluid p-0">
+                <hr class="bg-white m-0">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-md-4 d-flex justify-content-sm-start justify-content-center align-items-center p-0">
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#3C5B9B; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-facebook-f" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#359BED; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-twitter" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#E33729; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-google-plus-g" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#FD9F13; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-solid fa-rss" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social"
+                                style="width:38px; height:38px; background-color:#cb2027; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-pinterest" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                        </div>
+                        <div class="col-md d-flex justify-content-center align-items-center p-0">
+                            <p class="text-center m-0 py-2"
+                                style="color:#aaa; font-size: 13px; font-family: 'Open Sans', sans-serif;">© 2022 Carvan.
+                                All Rights
+                                Reserved.</p>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-sm-end justify-content-center align-items-center p-0">
+                            <img src="/image/icons/payment-1.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-2.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-3.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-4.png" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ARROW BACK TO HEADER -->
+    <button id="scrollTopBtn" title="Back to header"><i class="fa-solid fa-chevron-up" title="back to header"></i></button>
+    <!-- FOOTER END -->
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+    <script src="/js/template.js"></script>
+    <script src="/js/car-detail.js"></script>
+
+</body>
 </html>
