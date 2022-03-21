@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carvan - Car Market</title>
+
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/lib/slick.min.css">
+    <link rel="stylesheet" href="/lib/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800&subset=latin,latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500,600,700,800&subset=latin,latin-ext">
+
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/slick.min.js"></script>
+    <script src="/lib/ion.rangeSlider.min.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+
+<body>
+
+    <!-- HEADER BEGIN -->
+    <header>
+        <div class="header__bg">
+            <div class="header__bg-wrapper">
+                <div class="header---left">
+                    <div class="header__logo"></div>
+                </div>
+                <div class="header--right">
+                    <div class="header__topbar"></div>
+                    <div class="header__nav"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-wrapper">
+                    <div
+                        class="header--left d-flex align-items-center justify-content-between justify-content-lg-center">
+                        <div class="header__logo">
+                            <a href="/index.html">
+                                <h1 class="header__logo-text fw-bolder mx-lg-5 my-0">CARVAN</h1>
+                            </a>
+                        </div>
+                        <div class="header__mobile-menu-btn d-lg-none">
+                            <button class="btn" id="mobileMenuBtn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header--right flex-grow-1 d-flex flex-column">
+                        <div class="header__topbar row align-items-center justify-content-between">
+                            <div class="header__marquee col-12 col-lg-6 d-flex align-items-center">
+                                <marquee direction="left">
+                                    <span>Hot days! - <span>50%</span> Get ready for summer!</span>
+                                    <span>Save up to <span>40%</span> Hurry limited offer!</span>
+                                </marquee>
+                            </div>
+                            <div
+                                class="header__meta col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                                <div class="header__meta-item ms-3">
+                                    <i class="fa-regular fa-clock mr-1"></i> Mon - Fri : 09am to 06pm
+                                </div>
+                                <div class="header__meta-item ms-3">
+                                    <i class="fa-solid fa-phone mr-1"></i> +1 800 789 0000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__nav flex-grow-1 d-flex">
+                            <nav id="mainNav" class="navbar navbar-expand-lg navbar-light p-0 align-items-stretch">
+                                <div class="collapse navbar-collapse align-items-stretch" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item d-flex">
+                                            <a class="nav-link d-flex align-items-center" aria-current="page"
+                                                href="/index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a class="nav-link d-flex align-items-center" href="/about-us.html">About
+                                                Us</a>
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a class="nav-link d-flex align-items-center" href="#">Brands</a>
+                                            <ul class="sub-nav">
+                                                <li class="nav-item">
+                                                    <a href="/car-brand.html" class="nav-link">BMW</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="/car-brand.html" class="nav-link">Mercedes</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="/car-brand.html" class="nav-link">Ford</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="/car-brand.html" class="nav-link">Ford</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a class="nav-link d-flex align-items-center" href="/list.html">Range of Cars</a>
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a class="nav-link d-flex align-items-center active" href="/search.html">PreOwned Cars</a>
+                                        </li>
+                                        <li class="nav-item d-flex">
+                                            <a class="nav-link d-flex align-items-center"
+                                                href="/contact-us.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+        <div class="page-banner">
+            <aside class="container-fluid aside px-0 d-flex flex-column">
+                <div class="row">
+                    <ul class="d-flex">
+                        <li><a href="#">Home </a>
+                            <i class="bi bi-arrow-right-short text-light pe-1" style="cursor: default;"></i>
+                        <li><a href="#">List</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h3 class="text-light fw-bold fs-1">Vehicle List</h3>
+                </div>
+            </aside>
+        </div>
+        <section class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="main_left col-md-3 col-sm-12 p-4">
+                        <form action="" method="get" onsubmit="() => false">
+
+                            <div class="sidebar-widget bg-white box-shadow mb-3">
+                                <div class="sidebar-widget__header">
+                                    <h5 class="sidebar-widget__heading">Types</h5>
+                                </div>
+                                <div class="sidebar-widget__content">
+                                    <div class="form-group">
+                                    
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeSedan" checked>
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeSedan">
+                                                <img class="me-2" width="50" src="/image/car-type1.png" alt="">
+                                                <span>Sedan</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeTruck" checked>
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeTruck">
+                                                <img class="me-2" width="50" src="/image/car-type2.png" alt="">
+                                                <span>Truck</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeConvertible" checked>
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeConvertible">
+                                                <img class="me-2" width="50" src="/image/car-type3.png" alt="">
+                                                <span>Convertible</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeHybrid" checked>
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeHybrid">
+                                                <img class="me-2" width="50" src="/image/car-type5.png" alt="">
+                                                <span>Hybrid</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeCoupe" checked>
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeCoupe">
+                                                <img class="me-2" width="50" src="/image/car-type6.png" alt="">
+                                                <span>Coupe</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeSUV">
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeSUV">
+                                                <img class="me-2" width="50" src="/image/car-type7.png" alt="">
+                                                <span>SUV</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeWagon">
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeWagon">
+                                                <img class="me-2" width="50" src="/image/car-type8.png" alt="">
+                                                <span>Wagon</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeHatchback">
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeHatchback">
+                                                <img class="me-2" width="50" src="/image/car-type9.png" alt="">
+                                                <span>Hatchback</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypeLuxury">
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypeLuxury">
+                                                <img class="me-2" width="50" src="/image/car-type10.png" alt="">
+                                                <span>Luxury</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="types[]" id="checkboxTypePickup">
+                                            <label class="form-check-label d-flex align-items-center" for="checkboxTypePickup">
+                                                <img class="me-2" width="50" src="/image/car-type12.png" alt="">
+                                                <span>Pickup</span>
+                                            </label>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget bg-white box-shadow mb-3">
+                                <div class="sidebar-widget__header">
+                                    <h5 class="sidebar-widget__heading">Brands</h5>
+                                </div>
+
+                                <div class="sidebar-widget__content">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandBMW" checked>
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandBMW">
+                                                    <span>BMW</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandMerc">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandMerc">
+                                                    <span>Mercedes</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandPorsche">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandPorsche">
+                                                    <span>Maserati</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandPorsche">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandPorsche">
+                                                    <span>Volvo</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandChevrolet">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandChevrolet">
+                                                    <span>Chevrolet</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandFord">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandFord">
+                                                    <span>Ford</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandHonda">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandHonda">
+                                                    <span>Honda</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandToyota">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandToyota">
+                                                    <span>Toyota</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandHyundai">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandHyundai">
+                                                    <span>Hyundai</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandMazda">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandMazda">
+                                                    <span>Mazda</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandKIA">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandKIA">
+                                                    <span>KIA</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="brands[]" id="checkboxBrandSubaru">
+                                                <label class="form-check-label d-flex align-items-center" for="checkboxBrandSubaru">
+                                                    <span>Subaru</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget bg-white box-shadow mb-3">
+                                <div class="sidebar-widget__header">
+                                    <h5 class="sidebar-widget__heading">Price</h5>
+                                </div>
+                                <div class="sidebar-widget__content">
+                                    <input type="text" id="filterPrice" name="price" value="" />
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget bg-white box-shadow mb-3">
+                                <div class="sidebar-widget__header">
+                                    <h5 class="sidebar-widget__heading">Year</h5>
+                                </div>
+                                <div class="sidebar-widget__content">
+                                    <input type="text" id="filterYear" name="year" value="" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="main_right ">
+                            <div class="main_rightright box-shadow">
+                                <div class="row ">
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar1">
+                                        <div class="state d-flex align-items-center justify-content-center">USED</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p1.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html"><a href="/car-detail.html">Mercedes-Benz
+                                                    M-Class</a></a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$95,000</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">85000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Automatic</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2015</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar2">
+                                        <div class="state d-flex align-items-center justify-content-center">USED</div>
+                                        <a href="" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p2.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">Mercedes-Benz GLE-Class</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$80,900</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">60000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Automatic</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2016</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar3">
+                                        <div class="state d-flex align-items-center justify-content-center">USED</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p3.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">Mercedes-Benz GL-Class</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$110,500</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">72500</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Automatic</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2013</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar4">
+                                        <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p4.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">Mazda Mazda3</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$17,000</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">150000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Manua</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2009</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar5">
+                                        <div class="state d-flex align-items-center justify-content-center">USED</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p5.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">Hyundai Elantra</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$25,600</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">90000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Manual</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2015</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar6">
+                                        <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p23.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">Kia K900</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$69,000</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">30000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Automatic</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2017</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar7">
+                                        <div class="state d-flex align-items-center justify-content-center">USED</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p28.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">Nissan Pathfinder</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$95,000</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">60000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Automatic</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2016</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar8">
+                                        <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p8.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">Audi Q5</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$95,000</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">40000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Automatic</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2017</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-4 col-sm-6 d-flex flex-column align-items-center gridcar gridcar9">
+                                        <div class="state d-flex align-items-center justify-content-center">NEW</div>
+                                        <a href="/car-detail.html" class="d-block overflow-hidden"><img
+                                                src="https://klbtheme.com/harrier/wp-content/uploads/2018/09/p20.jpg"
+                                                alt="" class="img-fluid"></a>
+                                        <h5><a href="/car-detail.html">BMW 550i</a></h5>
+                                        <div class="line"></div>
+                                        <p class="mt-2" style="color: #121212;">$95,000</p>
+                                        <div class="d-flex align-items-center justify-content-around pt-4 info">
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-tachometer" style="color: #ccc"></i>
+                                                <p style="color: #ccc">90000</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-gear" style="color: #ccc"></i>
+                                                <p style="color: #ccc">Automatic</p>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fa fa-calendar" style="color: #ccc"></i>
+                                                <p style="color: #ccc">2011</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mypagination container-fluid m-0 ps-3">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-start">
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER BEGIN -->
+    <footer>
+        <!-- ACHIEVEMENTS -->
+        <div class="container-fluid p-0" style="background-color: white;">
+            <div class="container p-0">
+                <div class="AchFull">
+                    <div class="AchIcon row">
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/world-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">World's #1</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Largest Auto portal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/car-sold-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Car sold</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Every 4 minute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/tag-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Offers</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Stay updated pay less</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div class="AchText row">
+                                <div class="col-2">
+                                    <img src="/image/icons/compare-icon.png" class="Icons d-block" alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="AchFont m-0">Compare</h3>
+                                    <p class="AchFont1 m-0" style="color: rgb(137, 137, 137)">Decode the right car</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="footerBG container-fluid">
+            <div class="container">
+                <div class="row">
+                    <h3 class="fontFooterTitle text-center" style="color: #fbe122;font-size: 26px;">NEWSLETTER</h3>
+                    <h2 class="fontFooterTitle text-center text-white mb-4" style="font-size: 30px; font-weight:600">GET
+                        NOTIFIED OF ANY UPDATES!</h2>
+                </div>
+                <form action="" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-4 p-2 mb-1">
+                            <div class="form-floating">
+                                <input type="email" class="form-control rounded-0 border-0 w-100"
+                                    style="box-shadow: none; border-color: red;" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Your email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2 p-2 d-flex justify-content-center mb-2 align-items-center">
+                            <button type="button" class="btn rounded-0 border-0 px-5 py-0 btnNewsletter"
+                                style="box-shadow: none; width:100%; height: 58px; background-color:#fbe122;">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                            fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <h6 class="m-0"
+                                            style="font-size: 18px;font-size: 20px;font-family: 'Saira Condensed', sans-serif;">
+                                            SUBCRIBE</h6>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- IMFORMATION -->
+        <div class="container-fluid p-0" style="background-color: #23292e;">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-md mt-5" style="line-height:30px;">
+                        <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">SHOWROOM</h5>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">20 W
+                            34th St, New York, NY 10001, USA</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">+1
+                            800 123 0000</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">
+                            ursername@carvan.com</p>
+                        <p class="m-0"
+                            style="color:rgb(198, 196, 196); font-family: 'Open Sans', sans-serif; font-size:13px;">Mon
+                            – Fri : 09am to 06pm</p>
+                    </div>
+                    <div class="col-md-3 mt-5">
+                        <div class="imfDot row" style="line-height:30px;">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">QUICK LINKS</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Blog</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">FAQs</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Payment</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Shipment</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Where is my
+                                        order?</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Return Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5" style="line-height:30px;">
+                        <div class="imfDot row">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">STYLE ADVISOR</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">My account</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Information</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Addresses</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Discount</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Orders History</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Additional
+                                        Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-5" style="line-height:30px;">
+                        <div class="imfDot row">
+                            <h5 class="mb-3" style="font-family:'Saira Condensed', sans-serif">INFORMATION</h5>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Site Map</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Search Terms</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Advanced
+                                        Search</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">About Us</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Contact Us</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="" class="imfLink"
+                                        style="font-family:'Open Sans', sans-serif; font-size: 13px;">Suppliers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICONS -->
+            <div class="container-fluid p-0">
+                <hr class="bg-white m-0">
+                <div class="container">
+                    <div class="row py-4">
+                        <div
+                            class="col-md-4 d-flex justify-content-sm-start justify-content-center align-items-center p-0">
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#3C5B9B; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-facebook-f" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#359BED; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-twitter" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#E33729; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-google-plus-g" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social me-2"
+                                style="width:38px; height:38px; background-color:#FD9F13; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-solid fa-rss" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                            <a href="#" class="btn btn-social"
+                                style="width:38px; height:38px; background-color:#cb2027; display: flex; justify-content: center; align-items: center;">
+                                <i class="fa-brands fa-pinterest" style="color: #fff; font-size: x-large;"></i>
+                            </a>
+                        </div>
+                        <div class="col-md d-flex justify-content-center align-items-center p-0">
+                            <p class="text-center m-0 py-2"
+                                style="color:#aaa; font-size: 13px; font-family: 'Open Sans', sans-serif;">© 2022
+                                Carvan.
+                                All Rights
+                                Reserved.</p>
+                        </div>
+                        <div
+                            class="col-md-4 d-flex justify-content-sm-end justify-content-center align-items-center p-0">
+                            <img src="/image/icons/payment-1.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-2.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-3.png" alt="" class="pe-2">
+                            <img src="/image/icons/payment-4.png" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ARROW BACK TO HEADER -->
+    <button id="scrollTopBtn" title="Back to header"><i class="fa-solid fa-chevron-up"
+            title="back to header"></i></button>
+    <!-- FOOTER END -->
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+    <script src="/js/template.js"></script>
+
+    <script>
+        jQuery(function($){
+            $("#filterPrice").ionRangeSlider({
+                type: "double",
+                min: 500,
+                max: 5000,
+                from: 1500,
+                to: 3500,
+                step: 100,
+                prefix: "$"
+            });
+
+            $("#filterYear").ionRangeSlider({
+                type: "double",
+                min: 1990,
+                max: 2022,
+                from: 2010,
+                to: 2022,
+                step: 1,
+                prettify_enabled: false,
+            });
+
+            
+        })
+    </script>
+</body>
+
+</html>
